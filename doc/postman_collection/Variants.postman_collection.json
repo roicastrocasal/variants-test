@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "9f20c25f-17a4-4507-b771-340fd9dab615",
+		"name": "Variants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4165953"
+	},
+	"item": [
+		{
+			"name": "getProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/products/:productId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"products",
+						":productId"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "4d2bad96-aecf-4c39-8c30-97ff1f386bd4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVariantValues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/variant-values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"variant-values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVariantTypes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/variant-types",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"variant-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductPlained",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3010/api/products/:productId/plain-variants/:variantTypeId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"products",
+						":productId",
+						"plain-variants",
+						":variantTypeId"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "4d2bad96-aecf-4c39-8c30-97ff1f386bd4"
+						},
+						{
+							"key": "variantTypeId",
+							"value": "8566298d-fff5-4568-b094-cb2a1f23b4b7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postEditVariantValue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"valueId\": \"919287f0-4dde-4c97-b9fa-a551e4bf6492\",\r\n\t\"data\" : {\r\n\t\t\"image\" : \"variant_image_url.png\"\r\n\t} \r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3010/api/products/:productId/variant/:variantId/variant-value/:variantValueId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"api",
+						"products",
+						":productId",
+						"variant",
+						":variantId",
+						"variant-value",
+						":variantValueId"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "4d2bad96-aecf-4c39-8c30-97ff1f386bd4"
+						},
+						{
+							"key": "variantId",
+							"value": "bf8108d7-f372-4b4a-a297-3aa5b8851002"
+						},
+						{
+							"key": "variantValueId",
+							"value": "19603a1d-a134-460c-827d-adacbf4f9169"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "productId",
+			"value": "4d2bad96-aecf-4c39-8c30-97ff1f386bd4"
+		}
+	]
+}
