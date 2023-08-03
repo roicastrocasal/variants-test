@@ -8,3 +8,5 @@ Arrancar
 ```
 node main.js
 ```
+## Diagrama
+![Variantes](./doc/variantes.drawio.png)
