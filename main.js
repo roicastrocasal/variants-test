@@ -1,7 +1,7 @@
 const app = require("./app");
 const products = require("./data/product.json");
-const variantTypes = require("./data/variantTypes.json");
-const variantValues = require("./data/variantValues.json");
+const valuesClusters = require("./data/valueClusters.json");
+const valueTypes = require("./data/valueTypes.json");
 const {plainByVariantType, addVariantValue} = require("./services/productServices")
 
 
@@ -19,37 +19,37 @@ app.get("/api/products/:productId", (req,res) => {
 })
 
 
-app.get("/api/variant-types", (req,res) => {
+app.get("/api/values-clusters", (req,res) => {
 
-    res.json(variantTypes);
-
-})
-
-app.get("/api/variant-values", (req,res) => {
-
-    res.json(variantValues);
+    res.json(valuesClusters);
 
 })
 
-app.get("/api/products/:productId/plain-variants/:variantTypeId", (req,res) => {
-    const variantTypeId = req.params.variantTypeId;
+app.get("/api/value-types", (req,res) => {
+
+    res.json(valueTypes);
+
+})
+
+app.get("/api/products/:productId/plain-variants/:valueClusterId", (req,res) => {
+    const valueClusterId = req.params.valueClusterId;
     const productId = req.params.productId;
 
-    res.json(plainByVariantType(products, productId, variantTypeId))
+    res.json(plainByVariantType(products, productId, valueClusterId))
 
 
 
 
 })
 
-app.post("/api/products/:productId/variant/:variantId/variant-value/:variantValueId", (req,res) => {
+app.post("/api/products/:productId/variant/:variantId/variant-value/:valueTypeId", (req,res) => {
 
     const productId = req.params.productId;
     const variantId = req.params.variantId;
-    const variantValuesId = req.params.variantValueId;
+    const valueTypeId = req.params.valueTypeId;
     const newValue = req.body;
     
-    res.json(addVariantValue({products,variantValues,productId,variantId,variantValuesId, newValue}))
+    res.json(addVariantValue({products,valueTypes,productId,variantId,valueTypeId, newValue}))
 
 
 

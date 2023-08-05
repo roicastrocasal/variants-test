@@ -8,20 +8,20 @@
 
             {
                 "uuid" : "257a5fe8-426d-4bc4-aad6-016266716311",
-                "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-                "variantType" : "COLOR TALLAS",
-                "variantValues": [
+                "valueClusterId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+                "valueClusterName" : "COLOR TALLAS",
+                "valueTypes": [
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "valueTypeId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "valueTypeName" : "COLOR",
                         "values" : [
                             {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "900", "data" : {"image" : "image-resource-900"}},
                             {"valueId": "30b341df-5213-41b5-b740-101127f837bf","label": "907", "data" : {"image" : "image-resource-907"}}
                         ]
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "TALLA",
+                        "valueTypeId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "valueTypeName" : "TALLA",
                         "values" : [
                             {"valueId": "d27ca5e1-a5aa-4ecd-845b-29303e042728", "label": "XL"},
                             {"valueId" : "340202e5-3d4b-4570-bcd5-6a470f0a1656", "label" : "L"},
@@ -32,20 +32,20 @@
             },
             {
                 "uuid" : "1d59a5d5-14e6-4a89-b5c0-c90f2d6b083a",
-                "variantTypeId" : "5a1e1a62-9659-45f9-9375-a3b88eff3e74",
-                "variantType" : "ESTAMPADO TALLAS",
-                "variantValues": [
+                "valueClusterId" : "5a1e1a62-9659-45f9-9375-a3b88eff3e74",
+                "valueClusterName" : "ESTAMPADO TALLAS",
+                "valueTypes": [
                     {
-                        "variantValueId" : "e304616f-51cd-49ee-8c06-a7e092f684bf",
-                        "variantValueName" : "ESTAMPADO",
+                        "valueTypeId" : "e304616f-51cd-49ee-8c06-a7e092f684bf",
+                        "valueTypeName" : "ESTAMPADO",
                         "values" : [
                             {"valueId": "c0949fcb-74fc-4ba4-adae-c9579cc0843d","label": "Flores", "data" : {"image" : "image-resource-Flores"}},
                             {"valueId": "9b6a51be-5f6b-4f8f-a265-ae8ce4627d66","label": "Lunares", "data" : {"image" : "image-resource-lunares"}}
                         ]
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "TALLA",
+                        "valueTypeId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "valueTypeName" : "TALLA",
                         "values" : [
                             {"valueId": "d27ca5e1-a5aa-4ecd-845b-29303e042728", "label": "XL"},
                             {"valueId" : "340202e5-3d4b-4570-bcd5-6a470f0a1656", "label" : "L"},
@@ -66,19 +66,19 @@
 
             {
                 "uuid" : "087bf111-8b66-4096-9b55-73235518154e",
-                "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-                "variantType" : "COLOR TALLAS",
-                "variantValues": [
+                "valueClusterId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+                "valueClusterName" : "COLOR TALLAS",
+                "valueTypes": [
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "valueTypeId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "valueTypeName" : "COLOR",
                         "values" : [
                             {"valueId" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label" : "900"}
                         ]
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "TALLA",
+                        "valueTypeId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "valueTypeName" : "TALLA",
                         "values" : [
                             {"valueId" : "340202e5-3d4b-4570-bcd5-6a470f0a1656", "label" : "L"}
                         ]
@@ -87,19 +87,19 @@
             },
             {
                 "uuid" : "cc05b16a-77c4-4df2-bbb5-6c10c9b629f2",
-                "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-                "variantType" : "COLOR TALLAS",
-                "variantValues": [
+                "valueClusterId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+                "valueClusterName" : "COLOR TALLAS",
+                "valueTypes": [
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "color",
+                        "valueTypeId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "valueTypeName" : "color",
                         "values" : [
                             { "valueId" : "30b341df-5213-41b5-b740-101127f837bf","label" : "907"}
                         ]
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "talla",
+                        "valueTypeId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "valueTypeName" : "talla",
                         "values" : [
                             {"valueId": "d27ca5e1-a5aa-4ecd-845b-29303e042728", "label": "XL"},
                             {"valueId" : "340202e5-3d4b-4570-bcd5-6a470f0a1656", "label" : "L"}
@@ -119,26 +119,26 @@
 
             {
                 "uuid" : "bf8108d7-f372-4b4a-a297-3aa5b8851002",
-                "variantTypeId" : "8566298d-fff5-4568-b094-cb2a1f23b4b7",
-                "variantType" : "ALGODON POLIESTER COLOR",
-                "variantValues": [
+                "valueClusterId" : "8566298d-fff5-4568-b094-cb2a1f23b4b7",
+                "valueCluster" : "ALGODON POLIESTER COLOR",
+                "valueTypes": [
                     {
-                        "variantValueId" : "19603a1d-a134-460c-827d-adacbf4f9169",
-                        "variantValueName" : "ALGODON",
+                        "valueTypeId" : "19603a1d-a134-460c-827d-adacbf4f9169",
+                        "valueTypeName" : "ALGODON",
                         "values" : [
                             {"valueId" : "919287f0-4dde-4c97-b9fa-a551e4bf6492","label" : "98%"}
                         ]
                     },
                     {
-                        "variantValueId" : "9136d7ff-9601-45ee-8d54-e0870bc4d467",
-                        "variantValueName" : "POLIESTER",
+                        "valueTypeId" : "9136d7ff-9601-45ee-8d54-e0870bc4d467",
+                        "valueTypeName" : "POLIESTER",
                         "values" : [
                             {"valueId" : "d7e3b56c-3f85-42a5-a3f7-55612bc02f90", "label" : "2%"}
                         ]
                     },
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "valueTypeId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "valueTypeName" : "COLOR",
                         "values" : [
                             {"valueId" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label" : "900"},
                             {"valueId" : "30b341df-5213-41b5-b740-101127f837bf","label" : "907"}
@@ -149,26 +149,26 @@
             },
             {
                 "uuid" : "12c4c11a-7c03-4b2c-9385-014ccce7c7a4",
-                "variantTypeId" : "8566298d-fff5-4568-b094-cb2a1f23b4b7",
-                "variantType" : "ALGODON POLIESTER COLOR",
-                "variantValues": [
+                "valueClusterId" : "8566298d-fff5-4568-b094-cb2a1f23b4b7",
+                "valueClusterName" : "ALGODON POLIESTER COLOR",
+                "valueTypes": [
                     {
-                        "variantValueId" : "367f82a4-64c9-408e-bfdd-3787281e5b88",
-                        "variantValueName" : "ALGODON",
+                        "valueTypeId" : "367f82a4-64c9-408e-bfdd-3787281e5b88",
+                        "valueTypeName" : "ALGODON",
                         "values" : [
                             {"valueId" : "919287f0-4dde-4c97-b9fa-a551e4bf6492","label" : "95%"}
                         ]
                     },
                     {
-                        "variantValueId" : "263393c8-f1d2-430a-aaa3-e55cdd0672b4",
-                        "variantValueName" : "POLIESTER",
+                        "valueTypeId" : "263393c8-f1d2-430a-aaa3-e55cdd0672b4",
+                        "valueTypeName" : "POLIESTER",
                         "values" : [
                             {"valueId" : "d7e3b56c-3f85-42a5-a3f7-55612bc02f90", "label" : "5%"}
                         ]
                     },
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "valueTypeId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "valueTypeName" : "COLOR",
                         "values" : [
                             {"valueId" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label" : "900"}
                         ]
@@ -178,26 +178,26 @@
             },
             {
                 "uuid" : "1b8d5f5e-7bee-49da-b6c9-40848ce4ed5f",
-                "variantTypeId" : "8566298d-fff5-4568-b094-cb2a1f23b4b7",
-                "variantType" : "ALGODON POLIESTER COLOR",
-                "variantValues": [
+                "valueClusterId" : "8566298d-fff5-4568-b094-cb2a1f23b4b7",
+                "valueClusterName" : "ALGODON POLIESTER COLOR",
+                "valueTypes": [
                     {
-                        "variantValueId" : "367f82a4-64c9-408e-bfdd-3787281e5b88",
-                        "variantValueName" : "ALGODON",
+                        "valueTypeId" : "367f82a4-64c9-408e-bfdd-3787281e5b88",
+                        "valueTypeName" : "ALGODON",
                         "values" : [
                             {"valueId" : "be266ed3-a76b-40b7-8329-9d8fb8b599dc","label" : "95%"}
                         ]
                     },
                     {
-                        "variantValueId" : "263393c8-f1d2-430a-aaa3-e55cdd0672b4",
-                        "variantValueName" : "POLIESTER",
+                        "valueTypeId" : "263393c8-f1d2-430a-aaa3-e55cdd0672b4",
+                        "valueTypeName" : "POLIESTER",
                         "values" : [
                             {"valueId" : "4decd5a6-ce9e-4f34-8e61-aa0e9ca76d82", "label" : "5%"}
                         ]
                     },
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "valueTypeId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "valueTypeName" : "COLOR",
                         "values" : [
                             {"valueId" : "30b341df-5213-41b5-b740-101127f837bf","label" : "907"}
                         ]
