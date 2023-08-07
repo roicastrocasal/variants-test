@@ -6,6 +6,8 @@ module.exports.plainByVariantType = (products, productId, variantTypeId) => {
     const variantsByType = p.variants.filter(v => v.variantTypeId === variantTypeId);
 
     return variantsByType.flatMap(variant => {
+
+        variant
         
         const variantValues = variant.variantValues;
         const firstVariatValue = variantValues[0];
