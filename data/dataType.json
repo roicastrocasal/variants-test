@@ -1,7 +1,7 @@
 [
     {
         "uuid" : "a9db6eb6-37c6-49d8-9545-181734a11c52",
-        "productType" : "arn:clothes:1a1d241f-ba3b-45fb-9482-6adf21635748",
+        "productType" : "arn:zara:clothes:1a1d241f-ba3b-45fb-9482-6adf21635748",
         "name" : "IMAGE_URI",
         "params" : [
             {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "link", "type": "uri"}
@@ -12,10 +12,22 @@
     },
     {
         "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
-        "productType" : "arn:clothes:1a1d241f-ba3b-45fb-9482-6adf21635748",
+        "productType" : "arn:zara:clothes:1a1d241f-ba3b-45fb-9482-6adf21635748",
         "name" : "PRICE",
         "params" : [
             {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "arn", "type" : "prices_resource_id"}
+
+        ]
+
+        
+    },
+    {
+        "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
+        "productType" : "arn:zara:clothes:1a1d241f-ba3b-45fb-9482-6adf21635748",
+        "name" : "COLOR CSS",
+        "params" : [
+            {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "hex", "type" : "string"},
+            {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "rgb", "type" : "string"}
 
         ]
 

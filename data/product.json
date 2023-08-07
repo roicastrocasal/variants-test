@@ -153,6 +153,13 @@
                         "params" : {
                             "arn" : "arn:clothes:prices:1a1d241f-ba3b-45fb-9482-6adf21635748"
                         }
+                    },
+                    {
+                        "type" : "COLOR CSS",
+                        "params" : {
+                            "hex" : "#1122ff",
+                            "rgb" : "rgb(110, 180, 256)"
+                        }
                     }
                 ]
             },
@@ -166,7 +173,17 @@
                         "attributeValueName" : "COLOR",
                         "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "900"}
                     }
+                ],
+                "data" : [
+                    {
+                        "type" : "COLOR CSS",
+                        "params" : {
+                            "hex" : "#1122ff",
+                            "rgb" : "rgb(110, 180, 256)"
+                        }
+                    }
                 ]
+                
             }
             
 
