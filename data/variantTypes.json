@@ -2,7 +2,7 @@
 
     {
         "uuid" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-        "name" : "COLOR TALLAS",
+        "name" : "COLOR TALLA",
         "variantValues" : [
             "725a77de-8449-4245-87e1-06f97048f636",
             "74eec763-3ae7-41e5-b126-670711c09102"
@@ -11,7 +11,7 @@
     },
     {
         "uuid" : "5a1e1a62-9659-45f9-9375-a3b88eff3e74",
-        "name" : "ESTAMPADO TALLAS",
+        "name" : "ESTAMPADO TALLA",
         "variantValues" : [
             "e304616f-51cd-49ee-8c06-a7e092f684bf",
             "74eec763-3ae7-41e5-b126-670711c09102"
@@ -24,6 +24,14 @@
         "variantValues" : [
             "9136d7ff-9601-45ee-8d54-e0870bc4d467",
             "19603a1d-a134-460c-827d-adacbf4f9169",
+            "725a77de-8449-4245-87e1-06f97048f636"
+        ]
+
+    },
+    {
+        "uuid" : "b008771e-b31b-4c65-a96e-177ae5151b20",
+        "name" : "COLOR PRODUCTO",
+        "variantValues" : [
             "725a77de-8449-4245-87e1-06f97048f636"
         ]
 

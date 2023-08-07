@@ -3,7 +3,6 @@
         "uuid" : "a9db6eb6-37c6-49d8-9545-181734a11c52",
         "productType" : "arn:clothes:1a1d241f-ba3b-45fb-9482-6adf21635748",
         "name" : "IMAGE_URI",
-        "type" : "PARAMS",
         "params" : [
             {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "link", "type": "uri"}
 

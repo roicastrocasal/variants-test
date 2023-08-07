@@ -3,7 +3,18 @@
     {
         "uuid" : "2c9bead4-af64-4c0b-baba-15985d8905c3",
         "name" : "PANTALON CORTO",
-        "ref" : "2030/345",
+        "attrs" : [
+            {
+                "attributteValueId" : "6bfb273c-376c-42bb-abbc-c4dde770df3f",
+                "attributeValueName" : "MODELO",
+                "value" : {"valueId": "fdbf6fdf-7dda-4325-8adc-a7f2082cb5b1","label": "100"}
+            },
+            {
+                "attributeValueId" : "84689c55-d9c8-4a81-9bf2-c7f3554dba85",
+                "attributeValueName" : "CALIDAD",
+                "value" : {"valueId": "e868ca3c-509d-4a50-aeb9-bf071617ff04","label": "2000"}
+            }
+        ],
         "data" : [
             {   
                 "type" : "IMAGE_URI",
@@ -22,89 +33,89 @@
         "variants" : [
 
             {
-                "uuid" : "257a5fe8-426d-4bc4-aad6-016266716311",
+                "uuid" : "1f043338-b502-4702-9d6d-4803e85e06bd",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-                "variantType" : "COLOR TALLAS",
+                "variantType" : "COLOR TALLA",
                 "variantValues": [
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "attributeValueName" : "COLOR",
                         "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "900"}
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "TALLA",
+                        "attributeValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "attributeValueName" : "TALLA",
                         "value" : {"valueId": "d27ca5e1-a5aa-4ecd-845b-29303e042728", "label": "XL"}
                     }
                 ] 
             },
             {
-                "uuid" : "257a5fe8-426d-4bc4-aad6-016266716311",
+                "uuid" : "cc97ae3b-6326-42bb-9651-633a3756a87c",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-                "variantType" : "COLOR TALLAS",
+                "variantType" : "COLOR TALLA",
                 "variantValues": [
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "attributeValueName" : "COLOR",
                         "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "900"}
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "TALLA",
+                        "attributeValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "attributeValueName" : "TALLA",
                         "value" : 
                             {"valueId": "340202e5-3d4b-4570-bcd5-6a470f0a1656", "label": "L"}
                     }
                 ] 
             },
             {
-                "uuid" : "257a5fe8-426d-4bc4-aad6-016266716311",
+                "uuid" : "4408982f-69df-417a-b80c-889e7d1b668a",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-                "variantType" : "COLOR TALLAS",
+                "variantType" : "COLOR TALLA",
                 "variantValues": [
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "attributeValueName" : "COLOR",
                         "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "900"}
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "TALLA",
+                        "attributeValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "attributeValueName" : "TALLA",
                         "value" : 
                             {"valueId": "e531a5bb-7788-4b8f-b9f5-f007d714c3c2", "label": "M"}
                     }
                 ] 
             },
             {
-                "uuid" : "257a5fe8-426d-4bc4-aad6-016266716311",
+                "uuid" : "02dffb8f-89dd-43fd-980b-05149781b87b",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-                "variantType" : "COLOR TALLAS",
+                "variantType" : "COLOR TALLA",
                 "variantValues": [
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "attributeValueName" : "COLOR",
                         "value" : {"valueId": "30b341df-5213-41b5-b740-101127f837bf","label": "907"}
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "TALLA",
+                        "attributeValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "attributeValueName" : "TALLA",
                         "value" : 
                             {"valueId": "d27ca5e1-a5aa-4ecd-845b-29303e042728", "label": "XL"}
                     }
                 ] 
             },
             {
-                "uuid" : "257a5fe8-426d-4bc4-aad6-016266716311",
+                "uuid" : "48f8d1b1-6bde-4494-b905-0cc4957fc5a0",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-                "variantType" : "COLOR TALLAS",
+                "variantType" : "COLOR TALLA",
                 "variantValues": [
                     {
-                        "variantValueId" : "725a77de-8449-4245-87e1-06f97048f636",
-                        "variantValueName" : "COLOR",
+                        "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "attributeValueName" : "COLOR",
                         "value" : {"valueId": "30b341df-5213-41b5-b740-101127f837bf","label": "907"}
                     },
                     {
-                        "variantValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
-                        "variantValueName" : "TALLA",
+                        "attributeValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "attributeValueName" : "TALLA",
                         "value" : 
                             {"valueId": "340202e5-3d4b-4570-bcd5-6a470f0a1656", "label": "L"}
                     }
@@ -122,6 +133,38 @@
                         "params" : {
                             "arn" : "arn:clothes:prices:1a1d241f-ba3b-45fb-9482-6adf21635748"
                         }
+                    }
+                ]
+            },
+            {
+                "uuid" : "1b700be5-41bc-49a3-aaac-e7471fcdd723",
+                "variantTypeId" : "b008771e-b31b-4c65-a96e-177ae5151b20",
+                "variantType" : "COLOR PRODUCTO",
+                "variantValues": [
+                    {
+                        "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "attributeValueName" : "COLOR",
+                        "value" : {"valueId": "30b341df-5213-41b5-b740-101127f837bf","label": "907"}
+                    }
+                ],
+                "data" : [
+                    {
+                        "type": "PRODUCT_PRICE",
+                        "params" : {
+                            "arn" : "arn:clothes:prices:1a1d241f-ba3b-45fb-9482-6adf21635748"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid" : "0e569b33-6e83-469a-a002-2116eecea579",
+                "variantTypeId" : "b008771e-b31b-4c65-a96e-177ae5151b20",
+                "variantType" : "COLOR PRODUCTO",
+                "variantValues": [
+                    {
+                        "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
+                        "attributeValueName" : "COLOR",
+                        "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "900"}
                     }
                 ]
             }

@@ -1,8 +1,9 @@
 const app = require("./app");
 const products = require("./data/product.json");
 const variantTypes = require("./data/variantTypes.json");
-const variantValues = require("./data/variantValues.json");
-const {plainByVariantType, addVariantValue} = require("./services/productServices")
+const attributeValues = require("./data/attributeValues.json");
+const dataTypes = require("./data/dataType.json")
+const {plainByVariantType, addDataToVariant,findProduct} = require("./services/productServices")
 
 
 
@@ -14,7 +15,7 @@ app.get("/api/products", (req,res) => {
 
 app.get("/api/products/:productId", (req,res) => {
 
-    res.json(products.filter(p => p.uuid === req.params.productId)[0]);
+    res.json(findProduct(req.params.productId, products));
 
 })
 
@@ -25,9 +26,15 @@ app.get("/api/variant-types", (req,res) => {
 
 })
 
-app.get("/api/variant-values", (req,res) => {
+app.get("/api/attribute-values", (req,res) => {
 
-    res.json(variantValues);
+    res.json(attributeValues);
+
+})
+
+app.get("/api/data-types", (req,res) => {
+
+    res.json(dataTypes);
 
 })
 
@@ -42,18 +49,20 @@ app.get("/api/products/:productId/plain-variants/:variantTypeId", (req,res) => {
 
 })
 
-app.post("/api/products/:productId/variant/:variantId/variant-value/:variantValueId", (req,res) => {
-
+app.post("/api/products/:productId/variant/:variantId", (req,res) => {
     const productId = req.params.productId;
+    const product = findProduct(productId, products);
     const variantId = req.params.variantId;
-    const variantValuesId = req.params.variantValueId;
-    const newValue = req.body;
-    
-    res.json(addVariantValue({products,variantValues,productId,variantId,variantValuesId, newValue}))
+    const data = req.body;
+
+    res.json(addDataToVariant(product, variantId, data))
 
 
 
-});
+
+})
+
+
 
 
 

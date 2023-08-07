@@ -127,9 +127,63 @@
 
 
         ]
+        
 
+    },
+    {
+        "uuid" : "6bfb273c-376c-42bb-abbc-c4dde770df3f",
+        "name" : "MODELO",
+        "attrs" : [
+            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
+            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        ],
+        "values" : [
+            {
+                "uuid" : "fdbf6fdf-7dda-4325-8adc-a7f2082cb5b1",
+                "label" : "100"
+
+            },
+            {
+                "uuid" : "95905762-c1dc-4f34-ae8b-8fe87e6626f5",
+                "label" : "200"
+
+            },
+            {
+                "uuid" : "b0f02385-fae4-4760-a5a5-47f64f1130c8",
+                "label" : "300"
+
+            }
+
+
+        ]
+    },
+    {
+        "uuid" : "e868ca3c-509d-4a50-aeb9-bf071617ff04",
+        "name" : "CALIDAD",
+        "attrs" : [
+            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
+            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        ],
+        "values" : [
+            {
+                "uuid" : "bdf84858-05b2-4c27-baee-f356de2dbe60",
+                "label" : "1000"
+
+            },
+            {
+                "uuid" : "84689c55-d9c8-4a81-9bf2-c7f3554dba85",
+                "label" : "2000"
+
+            },
+            {
+                "uuid" : "84128c1e-e2ac-4b92-97be-495520cf18fa",
+                "label" : "3000"
+
+            }
+
+
+        ]
     }
-
 
 
 

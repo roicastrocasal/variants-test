@@ -3,67 +3,54 @@ module.exports.plainByVariantType = (products, productId, variantTypeId) => {
 
     const p = products.filter(p => p.uuid === productId)[0];
 
+    const pPlain = {
+        uuid: p.uuid,
+        name: p.name
+    }
+
+    p.attrs.forEach(attr => {
+        pPlain[attr.attributeValueName.toLowerCase()] = attr.value.label
+    })
+
     const variantsByType = p.variants.filter(v => v.variantTypeId === variantTypeId);
 
-    return variantsByType.flatMap(variant => {
-
-        variant
+    return variantsByType.map(variant => {
         
-        const variantValues = variant.variantValues;
-        const firstVariatValue = variantValues[0];
-        let objs = firstVariatValue.values.map(vv => {
-            const pVariant = {uuid : p.uuid , name: p.name}
-            pVariant[firstVariatValue.variantValueName.toLowerCase()] = vv.label
-            return pVariant
-        });
-        if(variantValues.length>1){
-            for(var i = 1; i< variantValues.length; i++){
-                const variantValue = variantValues[i];
-                objs = objs.flatMap(obj => {
-                    return variantValue.values.map(vv => {
-                        const objTemp =  {
-                            ...obj,
+        const pVariantPlain = {...pPlain}
 
-                        };
-                        objTemp[variantValue.variantValueName.toLowerCase()] = vv.label;
-                        return objTemp;
-                    })
-                })
+        variant.variantValues.forEach(variantValue =>{
+            pVariantPlain[variantValue.attributeValueName.toLowerCase()] = variantValue.value.label;
+        })
 
-
-            }
-        }
-        return objs
+        return pVariantPlain
         
 
     })
 
 
 
+
 }
 
-module.exports.addVariantValue = ({products,variantValues,productId,variantId,variantValuesId, newValue}) => {
+module.exports.findProduct = (productId, products) => products.filter(p => p.uuid === productId)[0]
 
-    const product = products.filter(p => p.uuid === productId)[0];
+module.exports.addDataToVariant = (product, variantId,data) => {
 
-    product.variants.filter(v => v.uuid === variantId).forEach(variant => {
+    const variant = product.variants.filter(variant => variant.uuid === variantId)[0];
 
-        const variantValue = variant.variantValues.filter(vv => vv.variantValueId === variantValuesId)[0];
-        const values = variantValue.values.filter(v => v.valueId === newValue.valueId)
-        if(values.length > 0){
-           const value = values[0];
-           value.data = newValue.data;
+    if(variant.data == null){
+        variant.data = []
+    }
+
+    if(variant){
+        const prevData = variant.data?.filter(d => d.type === data.type)[0];
+        if(prevData){
+            prevData.params = data.params
         }else{
-            const value = variantValues
-            .filter(vv => vv.uuid === variantValuesId )
-            .flatMap(vv => vv.values)
-            .filter(v => v.uuid === newValue.valueId)[0];
-
-            variantValue.values.push({valueId : value.uuid, label:value.label, data: newValue.data})
+            variant.data.push(data);
         }
-        
-    });
+    }
 
-    return product;
+    return product
 
 }
