@@ -373,19 +373,28 @@
                         "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "900"}
                     }
                 ],
-                "data" : [
-                    {   
-                        "type" : "MODELING RESOURCE",
-                        "params" : [
-                            {
-                                "name" : "arn",
-                                "type" : "cad_resource_id",
-                                "value" : "arn:zara:cars:files:cad:bfb86c94-90c6-484f-a96a-6abb827987bd"
-                            }
-                        ]
-                    
-                    }
-                ]
+                "metainfo" : {
+                    "typeId" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
+                    "type": "CAR INFO",
+                    "data" : [
+                        {   
+                            "type" : "MODELING RESOURCE",
+                            "params" : [
+                                {
+                                    "name" : "arn",
+                                    "type" : "cad_resource_id",
+                                    "value" : "arn:zara:cars:files:cad:bfb86c94-90c6-484f-a96a-6abb827987bd"
+                                },
+                                {
+                                    "name" : "arn",
+                                    "type" : "sketch_resource_id",
+                                    "value" :  "arn:zara:cars:files:sketch:27279c3f-05de-45d4-92f1-6c76040b4c0a"
+                                }
+                            ]
+                        
+                        }
+                    ]
+                }
                 
             }
             
