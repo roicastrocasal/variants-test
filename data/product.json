@@ -2,7 +2,18 @@
 
     {
         "uuid" : "2c9bead4-af64-4c0b-baba-15985d8905c3",
+        "arn" : "arn:zara:clothes:product:2c9bead4-af64-4c0b-baba-15985d8905c3",
+        "gtin" : 242120002,
         "name" : "PANTALON CORTO",
+        "productType" : {
+            "uuid" : "e7b2094d-9cff-452e-807d-fe7cd298cf0c",
+            "arn" : "arn:zara:clothes"
+        },
+        "categories" : [
+            "arn:zara",
+            "arn:zara:clothes",
+            "arn:zara:clothes:comprador:woman"
+        ],
         "attrs" : [
             {
                 "attributteValueId" : "6bfb273c-376c-42bb-abbc-c4dde770df3f",
@@ -15,26 +26,40 @@
                 "value" : {"valueId": "e868ca3c-509d-4a50-aeb9-bf071617ff04","label": "2000"}
             }
         ],
-        "data" : [
-            {   
-                "type" : "IMAGE_URI",
-                "params" : {
-                   "link": "imge-resources/product/image1.png"
+        "metainfo" : {
+            "typeId" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
+            "typeName" : "CLOTHES INFO",
+            "data": [
+                {   
+                    "type" : "IMAGE URI",
+                    "params" : [
+                        {
+                            "name" : "link",
+                            "type" : "uri",
+                            "value" : "/image1/product1"
+                        }
+                    ]
+                
+                },
+                {
+                    "type": "PRICE RESOURCE",
+                    "params" : [{
+                        "type" : "price_resource",
+                        "name" : "arn",
+                        "value" : "arn:zara:clothes:prices:f978d092-4d45-443a-9350-130e0ef74d35"
+                    }]
+
+                       
+                    
                 }
-            
-            },
-            {
-                "type": "PRODUCT_PRICE",
-                "params" : {
-                    "arn" : "arn:clothes:prices:1a1d241f-ba3b-45fb-9482-6adf21635748"
-                }
-            }
-        ],
+            ]
+        },
         "variants" : [
 
             {
                 "uuid" : "1f043338-b502-4702-9d6d-4803e85e06bd",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+                "sku": "a08bdc0f-1130-46be-8f88-e5f5f3447a29",
                 "variantType" : "COLOR TALLA",
                 "variantValues": [
                     {
@@ -52,6 +77,7 @@
             {
                 "uuid" : "cc97ae3b-6326-42bb-9651-633a3756a87c",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+                "sku": "55aaa434-9910-421c-b7e7-a015fda6ed04",
                 "variantType" : "COLOR TALLA",
                 "variantValues": [
                     {
@@ -70,6 +96,7 @@
             {
                 "uuid" : "4408982f-69df-417a-b80c-889e7d1b668a",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+                "sku": "03a9a550-c702-4ebe-b951-c3f6b2b493ef",
                 "variantType" : "COLOR TALLA",
                 "variantValues": [
                     {
@@ -89,6 +116,7 @@
                 "uuid" : "02dffb8f-89dd-43fd-980b-05149781b87b",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
                 "variantType" : "COLOR TALLA",
+                "sku": "45e66e3b-2cc3-45fb-92d0-e3fc27300cce",
                 "variantValues": [
                     {
                         "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
@@ -107,6 +135,7 @@
                 "uuid" : "48f8d1b1-6bde-4494-b905-0cc4957fc5a0",
                 "variantTypeId" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
                 "variantType" : "COLOR TALLA",
+                "sku": "7e63f3b7-38c3-4232-9dd0-91021dfdc245",
                 "variantValues": [
                     {
                         "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
@@ -120,53 +149,223 @@
                             {"valueId": "340202e5-3d4b-4570-bcd5-6a470f0a1656", "label": "L"}
                     }
                 ],
-                "data" : [
-                    {   
-                        "type" : "IMAGE_URI",
-                        "params" : {
-                           "link": "imge-resources/product/image1.png"
+                "metainfo" : {
+                    "typeId" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
+                    "typeName" : "CLOTHES INFO",
+                    "data": [
+                        {   
+                            "type" : "IMAGE URI",
+                            "params" : [
+                                {
+                                    "name" : "link",
+                                    "type" : "uri",
+                                    "value" : "/image2"
+                                }
+                            ]
+                        
                         }
-                    
-                    },
-                    {
-                        "type": "PRODUCT_PRICE",
-                        "params" : {
-                            "arn" : "arn:clothes:prices:1a1d241f-ba3b-45fb-9482-6adf21635748"
-                        }
-                    }
-                ]
+                    ]
+                }
             },
             {
                 "uuid" : "1b700be5-41bc-49a3-aaac-e7471fcdd723",
                 "variantTypeId" : "b008771e-b31b-4c65-a96e-177ae5151b20",
-                "variantType" : "COLOR PRODUCTO",
+                "sku": "8504b3b0-68ce-475d-8d35-db954b76fbf1",
+                "variantType" : "ESTAMPADO TALLA",
+                "variantValues": [
+                    {
+                        "attributeValueId" : "e304616f-51cd-49ee-8c06-a7e092f684bf",
+                        "attributeValueName" : "ESTAMPADO",
+                        "value" : {"valueId": "c0949fcb-74fc-4ba4-adae-c9579cc0843d","label": "Flores"}
+                    },
+                    {
+                        "attributeValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "attributeValueName" : "TALLA",
+                        "value" : 
+                            {"valueId": "340202e5-3d4b-4570-bcd5-6a470f0a1656", "label": "L"}
+                    }
+                ],
+                "metainfo" : {
+                    "typeId" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
+                    "typeName" : "CLOTHES INFO",
+                    "data": [
+                        {   
+                            "type" : "IMAGE URI",
+                            "params" : [
+                                {
+                                    "name" : "link",
+                                    "type" : "uri",
+                                    "value" : "/image3"
+                                }
+                            ]
+                        
+                        }
+                    ]
+                }
+            }
+            
+
+        ]
+
+    },
+    {
+        "uuid" : "80518f86-f64b-46b9-a049-9409bac692f2",
+        "arn" : "arn:zara:clothes:product:80518f86-f64b-46b9-a049-9409bac692f2",
+        "gtin" : 242120002,
+        "name" : "CAMISETA MANGA CORTA",
+        "productType" : {
+            "uuid" : "e7b2094d-9cff-452e-807d-fe7cd298cf0c",
+            "arn" : "arn:zara:clothes"
+        },
+        "categories" : [
+            "arn:zara",
+            "arn:zara:clothes",
+            "arn:zara:clothes:comprador:woman"
+        ],
+        "attrs" : [
+            {
+                "attributteValueId" : "6bfb273c-376c-42bb-abbc-c4dde770df3f",
+                "attributeValueName" : "MODELO",
+                "value" : {"valueId": "fdbf6fdf-7dda-4325-8adc-a7f2082cb5b1","label": "100"}
+            },
+            {
+                "attributeValueId" : "84689c55-d9c8-4a81-9bf2-c7f3554dba85",
+                "attributeValueName" : "CALIDAD",
+                "value" : {"valueId": "e868ca3c-509d-4a50-aeb9-bf071617ff04","label": "2000"}
+            },
+            {
+                "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
+                "attributeValueName" : "COLOR",
+                "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "900"}
+            }
+        ],
+        "metainfo" : {
+            "typeId" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
+            "typeName" : "CLOTHES INFO",
+            "data": [
+                {   
+                    "type" : "IMAGE URI",
+                    "params" : [
+                        {
+                            "name" : "link",
+                            "type" : "uri",
+                            "value" : "/image1/product1"
+                        }
+                    ]
+                
+                },
+                {
+                    "type": "PRICE RESOURCE",
+                    "params" : [{
+                        "type" : "price_resource",
+                        "name" : "arn",
+                        "value" : "arn:zara:clothes:prices:f978d092-4d45-443a-9350-130e0ef74d35"
+                    }]
+
+                       
+                    
+                }
+            ]
+        },
+        "variants" : [
+
+            {
+                "uuid" : "59548db8-c69b-48ba-b096-0d211287b5c0",
+                "variantTypeId" : "b75c51de-1e28-4b9a-9f32-02451f339034",
+                "sku": "ac0bff5d-8f57-44e2-8925-761b57883ed0",
+                "variantType" : "TALLA ROPA",
+                "variantValues": [
+                    {
+                        "attributeValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "attributeValueName" : "TALLA",
+                        "value" : {"valueId": "d27ca5e1-a5aa-4ecd-845b-29303e042728", "label": "XL"}
+                    }
+                ] 
+            },
+            {
+                "uuid" : "542d43f7-dd28-4535-b87d-daa0eea8eb1e",
+                "variantTypeId" : "b75c51de-1e28-4b9a-9f32-02451f339034",
+                "sku": "d7808210-d695-4062-b831-8cb78bbd95ac",
+                "variantType" : "TALLA ROPA",
+                "variantValues": [
+                    {
+                        "attributeValueId" : "74eec763-3ae7-41e5-b126-670711c09102",
+                        "attributeValueName" : "TALLA",
+                        "value" : {"valueId": "d27ca5e1-a5aa-4ecd-845b-29303e042728", "label": "L"}
+                    }
+                ] 
+            }
+        ]
+
+    },
+    {
+        "uuid" : "90e4add8-61e1-44bf-ba1e-eaf2c17e0711",
+        "arn" : "arn:zara:cars:product:2c9bead4-af64-4c0b-baba-15985d8905c3",
+        "gtin" : 242120002,
+        "name" : "ITX CAR MODEL 2",
+        "ref" : "carserrie2",
+        "productType" : {
+            "uuid" : "e7b2094d-9cff-452e-807d-fe7cd298cf0c",
+            "arn" : "arn:zara:cars:e7b2094d-9cff-452e-807d-fe7cd298cf0c"
+        },
+        "categories" : [
+            "arn:zara",
+            "arn:zara:cars",
+            "arn:zara:cars:comprador:woman"
+        ],
+        "attrs" : [
+            {
+                "attributteValueId" : "ba19ec8d-e425-4058-bb28-8a6322ae3b9c",
+                "attributeValueName" : "CAR GROUP",
+                "value" : {"valueId": "85f0a30c-a951-47d3-a1d2-da1181b8b182","label": "GRUPO 2"}
+            },
+            {
+                "attributeValueId" : "712df7fe-b7c6-4018-a393-372688f81c1e",
+                "attributeValueName" : "CAR TYPE",
+                "value" : {"valueId": "ea7024b2-777a-4c06-bcf0-12fc8634dd9c","label": "BERLINA"}
+            }
+        ],
+        "metainfo" : {
+            "typeId" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
+            "type": "CAR INFO",
+            "data": [
+                {   
+                    "type" : "MODELING RESOURCE",
+                    "params" : [
+                        {
+                            "name" : "arn",
+                            "type" : "cad_resource_id",
+                            "value" : "arn:zara:cars:files:cad:58c6aff3-2b73-4800-9de5-2ebf095c24d9"
+                        },
+                        {
+                            "name" : "arn",
+                            "type" : "sketch_resource_id",
+                            "value" :  "arn:zara:cars:files:sketch:518c6655-1710-4a2d-9a5c-d6d75fc0ee49"
+                        }
+                    ]
+                
+                }
+            ]
+        },
+        "variants" : [
+
+            {
+                "uuid" : "02dffb8f-89dd-43fd-980b-05149781b87b",
+                "variantTypeId" : "a0f7981a-cbdf-45cd-a2b4-e0665e56855d",
+                "variantType" : "CAR COLOR",
+                "sku": "",
                 "variantValues": [
                     {
                         "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
                         "attributeValueName" : "COLOR",
                         "value" : {"valueId": "30b341df-5213-41b5-b740-101127f837bf","label": "907"}
                     }
-                ],
-                "data" : [
-                    {
-                        "type": "PRODUCT_PRICE",
-                        "params" : {
-                            "arn" : "arn:clothes:prices:1a1d241f-ba3b-45fb-9482-6adf21635748"
-                        }
-                    },
-                    {
-                        "type" : "COLOR CSS",
-                        "params" : {
-                            "hex" : "#1122ff",
-                            "rgb" : "rgb(110, 180, 256)"
-                        }
-                    }
                 ]
             },
             {
                 "uuid" : "0e569b33-6e83-469a-a002-2116eecea579",
-                "variantTypeId" : "b008771e-b31b-4c65-a96e-177ae5151b20",
-                "variantType" : "COLOR PRODUCTO",
+                "variantTypeId" : "a0f7981a-cbdf-45cd-a2b4-e0665e56855d",
+                "variantType" : "CAR COLOR",
                 "variantValues": [
                     {
                         "attributeValueId" : "725a77de-8449-4245-87e1-06f97048f636",
@@ -175,18 +374,52 @@
                     }
                 ],
                 "data" : [
-                    {
-                        "type" : "COLOR CSS",
-                        "params" : {
-                            "hex" : "#1122ff",
-                            "rgb" : "rgb(110, 180, 256)"
-                        }
+                    {   
+                        "type" : "MODELING RESOURCE",
+                        "params" : [
+                            {
+                                "name" : "arn",
+                                "type" : "cad_resource_id",
+                                "value" : "arn:zara:cars:files:cad:bfb86c94-90c6-484f-a96a-6abb827987bd"
+                            }
+                        ]
+                    
                     }
                 ]
                 
             }
             
 
+        ],
+        "options" : [
+            {   
+                "uuid" : "254b1b44-2626-4ccf-aba3-67b1b59f33a3",
+                "optionId" : "725a77de-8449-4245-87e1-06f97048f636",
+                "productIdRef" : "arn:zara:carparts:abs:3207687f-8882-437c-9d4a-c97854522726",
+                "name" : "CAR EXTRAS",
+                "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "ABS"}
+            },
+            {
+                "uuid" : "c0e7198c-e71c-4aa0-833d-7ddae5fbe0dc",
+                "optionId" : "725a77de-8449-4245-87e1-06f97048f636",
+                "name" : "CAR EXTRAS",
+                "productIdRef" : "arn:zara:carparts:navigator:3207687f-8882-437c-9d4a-c97854522726",
+                "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "NAVIGATOR"}
+            }
+        ],
+        "configurations" : [
+            {
+                "uuid" : "c6c59bfa-4152-4af2-98bc-bbb334ce4c4c",
+                "name" : "ELEGANCE",
+                "variants" : ["0e569b33-6e83-469a-a002-2116eecea579"],
+                "options" : ["254b1b44-2626-4ccf-aba3-67b1b59f33a3"]
+            },
+            {
+                "uuid" : "c6c59bfa-4152-4af2-98bc-bbb334ce4c4c",
+                "name" : "SPORT",
+                "variants" : ["1b700be5-41bc-49a3-aaac-e7471fcdd723","0e569b33-6e83-469a-a002-2116eecea579"],
+                "options" : ["254b1b44-2626-4ccf-aba3-67b1b59f33a3","c0e7198c-e71c-4aa0-833d-7ddae5fbe0dc"]
+            }
         ]
 
     }

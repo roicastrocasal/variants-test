@@ -2,8 +2,10 @@ const app = require("./app");
 const products = require("./data/product.json");
 const variantTypes = require("./data/variantTypes.json");
 const attributeValues = require("./data/attributeValues.json");
-const dataTypes = require("./data/dataType.json")
-const {plainByVariantType, addDataToVariant,findProduct} = require("./services/productServices")
+const dataTypes = require("./data/dataTypes.json")
+const metaInfoTypes = require("./data/metainfoTypes.json");
+const optionsValues = require("./data/optionsValues.json")
+const {plainByVariantType, addDataToVariant,findProduct, filterByCategories} = require("./services/productServices")
 
 
 
@@ -20,15 +22,27 @@ app.get("/api/products/:productId", (req,res) => {
 })
 
 
-app.get("/api/variant-types", (req,res) => {
+app.post("/api/variant-types", (req,res) => {
 
-    res.json(variantTypes);
+    res.json(filterByCategories(req.body.category,variantTypes));
 
 })
 
-app.get("/api/attribute-values", (req,res) => {
+app.post("/api/metainfo-types", (req,res) => {
 
-    res.json(attributeValues);
+    res.json(filterByCategories(req.body.category,metaInfoTypes));
+
+})
+
+app.post("/api/option-values", (req,res) => {
+
+    res.json(filterByCategories(req.body.category,optionsValues));
+
+})
+
+app.post("/api/attribute-values", (req,res) => {
+
+    res.json(filterByCategories(req.body.category,attributeValues));
 
 })
 
@@ -38,11 +52,11 @@ app.get("/api/data-types", (req,res) => {
 
 })
 
-app.get("/api/products/:productId/plain-variants/:variantTypeId", (req,res) => {
+app.post("/api/products/:productId/variants", (req,res) => {
     const variantTypeId = req.params.variantTypeId;
     const productId = req.params.productId;
 
-    res.json(plainByVariantType(products, productId, variantTypeId))
+    res.json(plainByVariantType(products, productId, req.body.withMetainfo))
 
 
 

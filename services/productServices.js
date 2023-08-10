@@ -1,4 +1,4 @@
-module.exports.plainByVariantType = (products, productId, variantTypeId) => {
+module.exports.plainByVariantType = (products, productId, withMetainfo) => {
 
 
     const p = products.filter(p => p.uuid === productId)[0];
@@ -12,11 +12,26 @@ module.exports.plainByVariantType = (products, productId, variantTypeId) => {
         pPlain[attr.attributeValueName.toLowerCase()] = attr.value.label
     })
 
-    const variantsByType = p.variants.filter(v => v.variantTypeId === variantTypeId);
+    
 
-    return variantsByType.map(variant => {
+    return p.variants.map(variant => {
         
-        const pVariantPlain = {...pPlain}
+        const pVariantPlain = {product: p.arn, ...pPlain, uuid: variant.uuid,  }
+
+        if(withMetainfo){
+
+            if(variant.metainfo){
+                const typesVariant = variant.metainfo.data.map(d => d.type);
+                const dataTypesProduct = p.metainfo.data.filter(d  => -!typesVariant.includes(d.type));
+                pVariantPlain.metainfo = variant.metainfo;
+                variant.metainfo.data = [...variant.metainfo.data, ...dataTypesProduct];
+                
+            }else{
+                pVariantPlain.metainfo = p.metainfo;
+            }
+
+           
+        }
 
         variant.variantValues.forEach(variantValue =>{
             pVariantPlain[variantValue.attributeValueName.toLowerCase()] = variantValue.value.label;
@@ -43,7 +58,7 @@ module.exports.addDataToVariant = (product, variantId,data) => {
     }
 
     if(variant){
-        const prevData = variant.data?.filter(d => d.type === data.type)[0];
+        const prevData = variant.data ? variant.data.filter(d => d.type === data.type)[0] : [];
         if(prevData){
             prevData.params = data.params
         }else{
@@ -52,5 +67,18 @@ module.exports.addDataToVariant = (product, variantId,data) => {
     }
 
     return product
+
+}
+
+
+module.exports.filterByCategories = (category,values) => {
+
+   
+        return category ? values.filter(attr => {
+            return attr.categories.includes(category);
+        }) : values;
+   
+    
+
 
 }

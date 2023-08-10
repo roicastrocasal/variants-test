@@ -1,0 +1,67 @@
+[
+    {
+        "uuid" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
+        "name" : "CLOTHES INFO",
+        "categories" : [
+            "arn:zara:clothes"
+        ],
+        "dataTypes" : [
+            {
+                "uuid" : "a9db6eb6-37c6-49d8-9545-181734a11c52",
+                "name" : "IMAGE_URI",
+                "mandatory" : true
+            },
+            {
+                "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
+                "name" : "PRICE",
+                "mandatory" : true
+            }
+
+        ]
+
+    },
+    {
+        "uuid" : "c2192d64-ce5a-4e1d-8c4e-c02ec215f60f",
+        "name" : "SHOES INFO",
+        "categories" : [
+            "arn:zara:shoes"
+        ],
+        "dataTypes" : [
+            {
+                "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
+                "name" : "MODELING RESOURCE REFERENCE",
+                "mandatory" : true
+            },
+            {
+                "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
+                "name" : "PRICE REFERENCE",
+                "mandatory" : true
+            }
+
+        ]
+
+    },
+    {
+        "uuid" : "0331c1d9-c1fe-41d5-b84d-5d5ea0e81126",
+        "name" : "CAR INFO",
+        "categories" : [
+            "arn:zara:cars"
+        ],
+        "dataTypes" : [
+            {
+                "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
+                "name" : "MODELING RESOURCE REFERENCE",
+                "mandatory" : true
+            }
+
+        ]
+
+    }
+
+
+]
+
+
+
+
+

@@ -2,9 +2,9 @@
     {
         "uuid" : "725a77de-8449-4245-87e1-06f97048f636",
         "name" : "COLOR",
-        "attrs" : [
-            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
-            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        "categories" : [
+            "arn:zara:clothes",
+            "arn:zara:shoes"
         ],
         "values" : [
             {
@@ -25,9 +25,8 @@
     {
         "uuid" : "74eec763-3ae7-41e5-b126-670711c09102",
         "name" : "TALLA",
-        "attrs" : [
-            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
-            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        "categories" : [
+            "arn:zara:clothes"
         ],
         "values" : [
             {
@@ -53,9 +52,9 @@
     {
         "uuid" : "e304616f-51cd-49ee-8c06-a7e092f684bf",
         "name" : "ESTAMPADO",
-        "attrs" : [
-            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
-            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        "categories" : [
+            "arn:zara:clothes",
+            "arn:zara:telas"
         ],
         "values" : [
             {
@@ -76,9 +75,8 @@
     {
         "uuid" : "19603a1d-a134-460c-827d-adacbf4f9169",
         "name" : "ALGODON",
-        "attrs" : [
-            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
-            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        "categories" : [
+            "arn:zara:telas"
         ],
         "values" : [
             {
@@ -104,9 +102,8 @@
     {
         "uuid" : "9136d7ff-9601-45ee-8d54-e0870bc4d467",
         "name" : "POLIESTER",
-        "attrs" : [
-            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
-            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        "categories" : [
+            "arn:zara:telas"
         ],
         "values" : [
             {
@@ -133,9 +130,9 @@
     {
         "uuid" : "6bfb273c-376c-42bb-abbc-c4dde770df3f",
         "name" : "MODELO",
-        "attrs" : [
-            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
-            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        "categories" : [
+            "arn:zara:clothes",
+            "arn:zara:shoes"
         ],
         "values" : [
             {
@@ -160,9 +157,9 @@
     {
         "uuid" : "e868ca3c-509d-4a50-aeb9-bf071617ff04",
         "name" : "CALIDAD",
-        "attrs" : [
-            "5bfa5aef-08c8-46f2-a5a9-fb80d9668a36",
-            "4c427cb2-6d05-447e-9cf2-f19878ab2855"
+        "categories" : [
+            "arn:zara:clothes",
+            "arn:zara:shoes"
         ],
         "values" : [
             {
@@ -183,7 +180,55 @@
 
 
         ]
+    },
+    {
+        "uuid" : "ba19ec8d-e425-4058-bb28-8a6322ae3b9c",
+        "name" : "CAR GROUPS",
+        "categories" : [
+            "arn:zara:cars"
+        ],
+        "values" : [
+            {
+                "uuid" : "f1095595-913c-43c9-8c39-7d342b49e93d",
+                "label" : "GRUPO 1"
+
+            },
+            {
+                "uuid" : "85f0a30c-a951-47d3-a1d2-da1181b8b182",
+                "label" : "GRUPO 2"
+
+            },
+            {
+                "uuid" : "1e505d08-7996-41c2-9dcd-cce0249f68c4",
+                "label" : "GRUPO 3"
+
+            }
+
+
+        ]
+    },
+    {
+        "uuid" : "712df7fe-b7c6-4018-a393-372688f81c1e",
+        "name" : "CAR TYPE",
+        "categories" : [
+            "arn:zara:cars"
+        ],
+        "values" : [
+            {
+                "uuid" : "ea7024b2-777a-4c06-bcf0-12fc8634dd9c",
+                "label" : "BERLINA"
+
+            },
+            {
+                "uuid" : "8960e1c1-e82d-401e-be21-b063f173169d",
+                "label" : "FAMILIAR"
+
+            }
+
+
+        ]
     }
+    
 
 
 
