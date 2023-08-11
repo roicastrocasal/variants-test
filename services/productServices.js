@@ -1,67 +1,84 @@
-module.exports.plainByVariantType = (products, productId, variantTypeId) => {
+module.exports.plainByVariantType = (products, productId, withMetainfo) => {
 
 
     const p = products.filter(p => p.uuid === productId)[0];
 
-    const variantsByType = p.variants.filter(v => v.variantTypeId === variantTypeId);
+    const pPlain = {
+        uuid: p.uuid,
+        name: p.name
+    }
 
-    return variantsByType.flatMap(variant => {
+    p.attrs.forEach(attr => {
+        pPlain[attr.attributeValueName.toLowerCase()] = attr.value.label
+    })
+
+    
+
+    return p.variants.map(variant => {
         
-        const variantValues = variant.variantValues;
-        const firstVariatValue = variantValues[0];
-        let objs = firstVariatValue.values.map(vv => {
-            const pVariant = {uuid : p.uuid , name: p.name}
-            pVariant[firstVariatValue.variantValueName.toLowerCase()] = vv.label
-            return pVariant
-        });
-        if(variantValues.length>1){
-            for(var i = 1; i< variantValues.length; i++){
-                const variantValue = variantValues[i];
-                objs = objs.flatMap(obj => {
-                    return variantValue.values.map(vv => {
-                        const objTemp =  {
-                            ...obj,
+        const pVariantPlain = {product: p.urn, ...pPlain, uuid: variant.uuid,  }
 
-                        };
-                        objTemp[variantValue.variantValueName.toLowerCase()] = vv.label;
-                        return objTemp;
-                    })
-                })
+        if(withMetainfo){
 
-
+            if(variant.metainfo){
+                const typesVariant = variant.metainfo.data.map(d => d.type);
+                const dataTypesProduct = p.metainfo.data.filter(d  => -!typesVariant.includes(d.type));
+                pVariantPlain.metainfo = variant.metainfo;
+                variant.metainfo.data = [...variant.metainfo.data, ...dataTypesProduct];
+                
+            }else{
+                pVariantPlain.metainfo = p.metainfo;
             }
+
+           
         }
-        return objs
+
+        variant.variantValues.forEach(variantValue =>{
+            pVariantPlain[variantValue.attributeValueName.toLowerCase()] = variantValue.value.label;
+        })
+
+        return pVariantPlain
         
 
     })
 
 
 
+
 }
 
-module.exports.addVariantValue = ({products,variantValues,productId,variantId,variantValuesId, newValue}) => {
+module.exports.findProduct = (productId, products) => products.filter(p => p.uuid === productId)[0]
 
-    const product = products.filter(p => p.uuid === productId)[0];
+module.exports.addDataToVariant = (product, variantId,data) => {
 
-    product.variants.filter(v => v.uuid === variantId).forEach(variant => {
+    const variant = product.variants.filter(variant => variant.uuid === variantId)[0];
 
-        const variantValue = variant.variantValues.filter(vv => vv.variantValueId === variantValuesId)[0];
-        const values = variantValue.values.filter(v => v.valueId === newValue.valueId)
-        if(values.length > 0){
-           const value = values[0];
-           value.data = newValue.data;
+    if(variant.data == null){
+        variant.data = []
+    }
+
+    if(variant){
+        const prevData = variant.data ? variant.data.filter(d => d.type === data.type)[0] : [];
+        if(prevData){
+            prevData.params = data.params
         }else{
-            const value = variantValues
-            .filter(vv => vv.uuid === variantValuesId )
-            .flatMap(vv => vv.values)
-            .filter(v => v.uuid === newValue.valueId)[0];
-
-            variantValue.values.push({valueId : value.uuid, label:value.label, data: newValue.data})
+            variant.data.push(data);
         }
-        
-    });
+    }
 
-    return product;
+    return product
+
+}
+
+
+module.exports.filterByCategories = (category,values) => {
+
+   
+        return category ? values.filter(attr => {
+            return attr.categories.includes(category);
+        }) : values;
+   
+    
+
 
 }

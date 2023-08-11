@@ -1,0 +1,22 @@
+[{
+    "uuid" : "725a77de-8449-4245-87e1-06f97048f636",
+    "name" : "CAR EXTRAS",
+    "categories" : [
+        "urn:zara:cars"
+    ],
+    "values" : [
+        {
+            "uuid" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+            "label" : "ABS"
+
+        },
+        {
+            "uuid" : "30b341df-5213-41b5-b740-101127f837bf",
+            "label" : "NAVIGATOR"
+
+        }
+
+
+    ]
+
+}]

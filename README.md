@@ -14,4 +14,4 @@ node main.js
 * [Postman](./doc/postman_collection/Variants.postman_collection.json)
 
 ## Diagrama
-![Variantes](./doc/variantes.drawio.png)
+![Variantes](./doc/variantes-unidimensional.drawio.png)

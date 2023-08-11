@@ -1,0 +1,235 @@
+[
+    {
+        "uuid" : "725a77de-8449-4245-87e1-06f97048f636",
+        "name" : "COLOR",
+        "categories" : [
+            "urn:zara:clothes",
+            "urn:zara:shoes"
+        ],
+        "values" : [
+            {
+                "uuid" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+                "label" : "900"
+
+            },
+            {
+                "uuid" : "30b341df-5213-41b5-b740-101127f837bf",
+                "label" : "907"
+
+            }
+
+
+        ]
+
+    },
+    {
+        "uuid" : "74eec763-3ae7-41e5-b126-670711c09102",
+        "name" : "TALLA",
+        "categories" : [
+            "urn:zara:clothes"
+        ],
+        "values" : [
+            {
+                "uuid" : "340202e5-3d4b-4570-bcd5-6a470f0a1656",
+                "label" : "L"
+
+            },
+            {
+                "uuid" : "d27ca5e1-a5aa-4ecd-845b-29303e042728",
+                "label" : "XL"
+
+            },
+            {
+                "uuid" : "e531a5bb-7788-4b8f-b9f5-f007d714c3c2",
+                "label" : "M"
+
+            }
+
+
+        ]
+
+    },
+    {
+        "uuid" : "e304616f-51cd-49ee-8c06-a7e092f684bf",
+        "name" : "ESTAMPADO",
+        "categories" : [
+            "urn:zara:clothes",
+            "urn:zara:telas"
+        ],
+        "values" : [
+            {
+                "uuid" : "c0949fcb-74fc-4ba4-adae-c9579cc0843d",
+                "label" : "Flores"
+
+            },
+            {
+                "uuid" : "9b6a51be-5f6b-4f8f-a265-ae8ce4627d66",
+                "label" : "Lunares"
+
+            }
+
+
+        ]
+
+    },
+    {
+        "uuid" : "19603a1d-a134-460c-827d-adacbf4f9169",
+        "name" : "ALGODON",
+        "categories" : [
+            "urn:zara:telas"
+        ],
+        "values" : [
+            {
+                "uuid" : "919287f0-4dde-4c97-b9fa-a551e4bf6492",
+                "label" : "98%"
+
+            },
+            {
+                "uuid" : "367f82a4-64c9-408e-bfdd-3787281e5b88",
+                "label" : "95%"
+
+            },
+            {
+                "uuid" : "be266ed3-a76b-40b7-8329-9d8fb8b599dc",
+                "label" : "90%"
+
+            }
+
+
+        ]
+
+    },
+    {
+        "uuid" : "9136d7ff-9601-45ee-8d54-e0870bc4d467",
+        "name" : "POLIESTER",
+        "categories" : [
+            "urn:zara:telas"
+        ],
+        "values" : [
+            {
+                "uuid" : "d7e3b56c-3f85-42a5-a3f7-55612bc02f90",
+                "label" : "2%"
+
+            },
+            {
+                "uuid" : "263393c8-f1d2-430a-aaa3-e55cdd0672b4",
+                "label" : "5%"
+
+            },
+            {
+                "uuid" : "4decd5a6-ce9e-4f34-8e61-aa0e9ca76d82",
+                "label" : "10%"
+
+            }
+
+
+        ]
+        
+
+    },
+    {
+        "uuid" : "6bfb273c-376c-42bb-abbc-c4dde770df3f",
+        "name" : "MODELO",
+        "categories" : [
+            "urn:zara:clothes",
+            "urn:zara:shoes"
+        ],
+        "values" : [
+            {
+                "uuid" : "fdbf6fdf-7dda-4325-8adc-a7f2082cb5b1",
+                "label" : "100"
+
+            },
+            {
+                "uuid" : "95905762-c1dc-4f34-ae8b-8fe87e6626f5",
+                "label" : "200"
+
+            },
+            {
+                "uuid" : "b0f02385-fae4-4760-a5a5-47f64f1130c8",
+                "label" : "300"
+
+            }
+
+
+        ]
+    },
+    {
+        "uuid" : "e868ca3c-509d-4a50-aeb9-bf071617ff04",
+        "name" : "CALIDAD",
+        "categories" : [
+            "urn:zara:clothes",
+            "urn:zara:shoes"
+        ],
+        "values" : [
+            {
+                "uuid" : "bdf84858-05b2-4c27-baee-f356de2dbe60",
+                "label" : "1000"
+
+            },
+            {
+                "uuid" : "84689c55-d9c8-4a81-9bf2-c7f3554dba85",
+                "label" : "2000"
+
+            },
+            {
+                "uuid" : "84128c1e-e2ac-4b92-97be-495520cf18fa",
+                "label" : "3000"
+
+            }
+
+
+        ]
+    },
+    {
+        "uuid" : "ba19ec8d-e425-4058-bb28-8a6322ae3b9c",
+        "name" : "CAR GROUPS",
+        "categories" : [
+            "urn:zara:cars"
+        ],
+        "values" : [
+            {
+                "uuid" : "f1095595-913c-43c9-8c39-7d342b49e93d",
+                "label" : "GRUPO 1"
+
+            },
+            {
+                "uuid" : "85f0a30c-a951-47d3-a1d2-da1181b8b182",
+                "label" : "GRUPO 2"
+
+            },
+            {
+                "uuid" : "1e505d08-7996-41c2-9dcd-cce0249f68c4",
+                "label" : "GRUPO 3"
+
+            }
+
+
+        ]
+    },
+    {
+        "uuid" : "712df7fe-b7c6-4018-a393-372688f81c1e",
+        "name" : "CAR TYPE",
+        "categories" : [
+            "urn:zara:cars"
+        ],
+        "values" : [
+            {
+                "uuid" : "ea7024b2-777a-4c06-bcf0-12fc8634dd9c",
+                "label" : "BERLINA"
+
+            },
+            {
+                "uuid" : "8960e1c1-e82d-401e-be21-b063f173169d",
+                "label" : "FAMILIAR"
+
+            }
+
+
+        ]
+    }
+    
+
+
+
+]
