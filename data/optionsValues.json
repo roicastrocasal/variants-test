@@ -2,7 +2,7 @@
     "uuid" : "725a77de-8449-4245-87e1-06f97048f636",
     "name" : "CAR EXTRAS",
     "categories" : [
-        "arn:zara:cars"
+        "urn:zara:cars"
     ],
     "values" : [
         {

@@ -3,7 +3,7 @@
         "uuid" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
         "name" : "CLOTHES INFO",
         "categories" : [
-            "arn:zara:clothes"
+            "urn:zara:clothes"
         ],
         "dataTypes" : [
             {
@@ -24,7 +24,7 @@
         "uuid" : "c2192d64-ce5a-4e1d-8c4e-c02ec215f60f",
         "name" : "SHOES INFO",
         "categories" : [
-            "arn:zara:shoes"
+            "urn:zara:shoes"
         ],
         "dataTypes" : [
             {
@@ -45,7 +45,7 @@
         "uuid" : "0331c1d9-c1fe-41d5-b84d-5d5ea0e81126",
         "name" : "CAR INFO",
         "categories" : [
-            "arn:zara:cars"
+            "urn:zara:cars"
         ],
         "dataTypes" : [
             {

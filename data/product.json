@@ -2,17 +2,17 @@
 
     {
         "uuid" : "2c9bead4-af64-4c0b-baba-15985d8905c3",
-        "arn" : "arn:zara:clothes:product:2c9bead4-af64-4c0b-baba-15985d8905c3",
+        "urn" : "urn:zara:clothes:product:2c9bead4-af64-4c0b-baba-15985d8905c3",
         "gtin" : 242120002,
         "name" : "PANTALON CORTO",
         "productType" : {
             "uuid" : "e7b2094d-9cff-452e-807d-fe7cd298cf0c",
-            "arn" : "arn:zara:clothes"
+            "urn" : "urn:zara:clothes"
         },
         "categories" : [
-            "arn:zara",
-            "arn:zara:clothes",
-            "arn:zara:clothes:comprador:woman"
+            "urn:zara",
+            "urn:zara:clothes",
+            "urn:zara:clothes:comprador:woman"
         ],
         "attrs" : [
             {
@@ -45,8 +45,8 @@
                     "type": "PRICE RESOURCE",
                     "params" : [{
                         "type" : "price_resource",
-                        "name" : "arn",
-                        "value" : "arn:zara:clothes:prices:f978d092-4d45-443a-9350-130e0ef74d35"
+                        "name" : "urn",
+                        "value" : "urn:zara:clothes:prices:f978d092-4d45-443a-9350-130e0ef74d35"
                     }]
 
                        
@@ -210,17 +210,17 @@
     },
     {
         "uuid" : "80518f86-f64b-46b9-a049-9409bac692f2",
-        "arn" : "arn:zara:clothes:product:80518f86-f64b-46b9-a049-9409bac692f2",
+        "urn" : "urn:zara:clothes:product:80518f86-f64b-46b9-a049-9409bac692f2",
         "gtin" : 242120002,
         "name" : "CAMISETA MANGA CORTA",
         "productType" : {
             "uuid" : "e7b2094d-9cff-452e-807d-fe7cd298cf0c",
-            "arn" : "arn:zara:clothes"
+            "urn" : "urn:zara:clothes"
         },
         "categories" : [
-            "arn:zara",
-            "arn:zara:clothes",
-            "arn:zara:clothes:comprador:woman"
+            "urn:zara",
+            "urn:zara:clothes",
+            "urn:zara:clothes:comprador:woman"
         ],
         "attrs" : [
             {
@@ -258,8 +258,8 @@
                     "type": "PRICE RESOURCE",
                     "params" : [{
                         "type" : "price_resource",
-                        "name" : "arn",
-                        "value" : "arn:zara:clothes:prices:f978d092-4d45-443a-9350-130e0ef74d35"
+                        "name" : "urn",
+                        "value" : "urn:zara:clothes:prices:f978d092-4d45-443a-9350-130e0ef74d35"
                     }]
 
                        
@@ -300,18 +300,18 @@
     },
     {
         "uuid" : "90e4add8-61e1-44bf-ba1e-eaf2c17e0711",
-        "arn" : "arn:zara:cars:product:2c9bead4-af64-4c0b-baba-15985d8905c3",
+        "urn" : "urn:zara:cars:product:2c9bead4-af64-4c0b-baba-15985d8905c3",
         "gtin" : 242120002,
         "name" : "ITX CAR MODEL 2",
         "ref" : "carserrie2",
         "productType" : {
             "uuid" : "e7b2094d-9cff-452e-807d-fe7cd298cf0c",
-            "arn" : "arn:zara:cars:e7b2094d-9cff-452e-807d-fe7cd298cf0c"
+            "urn" : "urn:zara:cars:e7b2094d-9cff-452e-807d-fe7cd298cf0c"
         },
         "categories" : [
-            "arn:zara",
-            "arn:zara:cars",
-            "arn:zara:cars:comprador:woman"
+            "urn:zara",
+            "urn:zara:cars",
+            "urn:zara:cars:comprador:woman"
         ],
         "attrs" : [
             {
@@ -333,14 +333,14 @@
                     "type" : "MODELING RESOURCE",
                     "params" : [
                         {
-                            "name" : "arn",
+                            "name" : "urn",
                             "type" : "cad_resource_id",
-                            "value" : "arn:zara:cars:files:cad:58c6aff3-2b73-4800-9de5-2ebf095c24d9"
+                            "value" : "urn:zara:cars:files:cad:58c6aff3-2b73-4800-9de5-2ebf095c24d9"
                         },
                         {
-                            "name" : "arn",
+                            "name" : "urn",
                             "type" : "sketch_resource_id",
-                            "value" :  "arn:zara:cars:files:sketch:518c6655-1710-4a2d-9a5c-d6d75fc0ee49"
+                            "value" :  "urn:zara:cars:files:sketch:518c6655-1710-4a2d-9a5c-d6d75fc0ee49"
                         }
                     ]
                 
@@ -381,14 +381,14 @@
                             "type" : "MODELING RESOURCE",
                             "params" : [
                                 {
-                                    "name" : "arn",
+                                    "name" : "urn",
                                     "type" : "cad_resource_id",
-                                    "value" : "arn:zara:cars:files:cad:bfb86c94-90c6-484f-a96a-6abb827987bd"
+                                    "value" : "urn:zara:cars:files:cad:bfb86c94-90c6-484f-a96a-6abb827987bd"
                                 },
                                 {
-                                    "name" : "arn",
+                                    "name" : "urn",
                                     "type" : "sketch_resource_id",
-                                    "value" :  "arn:zara:cars:files:sketch:27279c3f-05de-45d4-92f1-6c76040b4c0a"
+                                    "value" :  "urn:zara:cars:files:sketch:27279c3f-05de-45d4-92f1-6c76040b4c0a"
                                 }
                             ]
                         
@@ -404,7 +404,7 @@
             {   
                 "uuid" : "254b1b44-2626-4ccf-aba3-67b1b59f33a3",
                 "optionId" : "725a77de-8449-4245-87e1-06f97048f636",
-                "productIdRef" : "arn:zara:carparts:abs:3207687f-8882-437c-9d4a-c97854522726",
+                "productIdRef" : "urn:zara:carparts:abs:3207687f-8882-437c-9d4a-c97854522726",
                 "name" : "CAR EXTRAS",
                 "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "ABS"}
             },
@@ -412,7 +412,7 @@
                 "uuid" : "c0e7198c-e71c-4aa0-833d-7ddae5fbe0dc",
                 "optionId" : "725a77de-8449-4245-87e1-06f97048f636",
                 "name" : "CAR EXTRAS",
-                "productIdRef" : "arn:zara:carparts:navigator:3207687f-8882-437c-9d4a-c97854522726",
+                "productIdRef" : "urn:zara:carparts:navigator:3207687f-8882-437c-9d4a-c97854522726",
                 "value" : {"valueId": "f262e61f-9dc7-4943-af6e-d85a4f084b4d","label": "NAVIGATOR"}
             }
         ],

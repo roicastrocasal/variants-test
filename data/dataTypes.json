@@ -13,7 +13,7 @@
         "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
         "name" : "PRICE RESOURCE",
         "params" : [
-            {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "arn", "type" : "prices_resource_id"}
+            {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "urn", "type" : "prices_resource_id"}
 
         ]
 
@@ -23,8 +23,8 @@
         "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
         "name" : "MODELING RESOURCE",
         "params" : [
-            {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "arn", "type" : "cad_resource_id"},
-            {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "arn", "type" : "sketch_resource_id"}
+            {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "urn", "type" : "cad_resource_id"},
+            {"uuid" : "73eddc19-9998-4941-aeed-af8715440736", "name" : "urn", "type" : "sketch_resource_id"}
 
         ]
 

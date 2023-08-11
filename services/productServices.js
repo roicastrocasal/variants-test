@@ -16,7 +16,7 @@ module.exports.plainByVariantType = (products, productId, withMetainfo) => {
 
     return p.variants.map(variant => {
         
-        const pVariantPlain = {product: p.arn, ...pPlain, uuid: variant.uuid,  }
+        const pVariantPlain = {product: p.urn, ...pPlain, uuid: variant.uuid,  }
 
         if(withMetainfo){
 

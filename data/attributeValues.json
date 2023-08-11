@@ -3,8 +3,8 @@
         "uuid" : "725a77de-8449-4245-87e1-06f97048f636",
         "name" : "COLOR",
         "categories" : [
-            "arn:zara:clothes",
-            "arn:zara:shoes"
+            "urn:zara:clothes",
+            "urn:zara:shoes"
         ],
         "values" : [
             {
@@ -26,7 +26,7 @@
         "uuid" : "74eec763-3ae7-41e5-b126-670711c09102",
         "name" : "TALLA",
         "categories" : [
-            "arn:zara:clothes"
+            "urn:zara:clothes"
         ],
         "values" : [
             {
@@ -53,8 +53,8 @@
         "uuid" : "e304616f-51cd-49ee-8c06-a7e092f684bf",
         "name" : "ESTAMPADO",
         "categories" : [
-            "arn:zara:clothes",
-            "arn:zara:telas"
+            "urn:zara:clothes",
+            "urn:zara:telas"
         ],
         "values" : [
             {
@@ -76,7 +76,7 @@
         "uuid" : "19603a1d-a134-460c-827d-adacbf4f9169",
         "name" : "ALGODON",
         "categories" : [
-            "arn:zara:telas"
+            "urn:zara:telas"
         ],
         "values" : [
             {
@@ -103,7 +103,7 @@
         "uuid" : "9136d7ff-9601-45ee-8d54-e0870bc4d467",
         "name" : "POLIESTER",
         "categories" : [
-            "arn:zara:telas"
+            "urn:zara:telas"
         ],
         "values" : [
             {
@@ -131,8 +131,8 @@
         "uuid" : "6bfb273c-376c-42bb-abbc-c4dde770df3f",
         "name" : "MODELO",
         "categories" : [
-            "arn:zara:clothes",
-            "arn:zara:shoes"
+            "urn:zara:clothes",
+            "urn:zara:shoes"
         ],
         "values" : [
             {
@@ -158,8 +158,8 @@
         "uuid" : "e868ca3c-509d-4a50-aeb9-bf071617ff04",
         "name" : "CALIDAD",
         "categories" : [
-            "arn:zara:clothes",
-            "arn:zara:shoes"
+            "urn:zara:clothes",
+            "urn:zara:shoes"
         ],
         "values" : [
             {
@@ -185,7 +185,7 @@
         "uuid" : "ba19ec8d-e425-4058-bb28-8a6322ae3b9c",
         "name" : "CAR GROUPS",
         "categories" : [
-            "arn:zara:cars"
+            "urn:zara:cars"
         ],
         "values" : [
             {
@@ -211,7 +211,7 @@
         "uuid" : "712df7fe-b7c6-4018-a393-372688f81c1e",
         "name" : "CAR TYPE",
         "categories" : [
-            "arn:zara:cars"
+            "urn:zara:cars"
         ],
         "values" : [
             {
