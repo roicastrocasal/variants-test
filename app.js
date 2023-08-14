@@ -29,11 +29,42 @@ const resolvers = {
     Query: {
         product: (_, args) => products.find(p => p.urn === args.id)
     },
-    ClothesProduct : {
+    Product : {
         attributes : productAttributesResolver,
         metainfo: productMetainfoResolver,
         variants: productVariantsResolver,
         schema: productSchemaResolver
+    },
+    ProductAttribute: {
+        __resolveType: (parent) => { 
+            switch (parent.__type) { 
+                case "urn:zara:clothes":
+                    return 'ClothesAttribute'
+                default:
+                    return 'CarsAttribute'
+            }
+        }
+    },
+    ProductVariant: {
+       __resolveType: (parent) => { 
+            switch (parent.__type) { 
+                case "urn:zara:clothes":
+                    return 'ClothesVariant'
+                default:
+                    return 'CarsVariant'
+            }
+        }
+    },
+    ProductMetainfo: {
+       __resolveType: (parent) => { 
+            switch (parent.__type) { 
+                case "urn:zara:clothes":
+                    return 'ClothesMetainfo'
+                case "urn:zara:cars":
+                    return 'CarsMetainfo'
+               
+            }
+        }
     },
     Schema : {
         attributes: productSchemaAttributesResolver,

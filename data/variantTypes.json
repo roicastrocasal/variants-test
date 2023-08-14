@@ -1,71 +1,45 @@
 [
-
-    {
-        "uuid" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-        "urn" : "urn:zara:clothes:variant-type:color-size",
-        "name" : "COLOR TALLA",
-        "categories" : [
-            "urn:zara:clothes"
-        ],
-        "attributeTypes" : [
-            "urn:zara:attribute-values:color",
-            "urn:zara:attribute-values:size"
-        ]
-
-    },
-    {
-        "uuid" : "b75c51de-1e28-4b9a-9f32-02451f339034",
-        "urn" : "urn:zara:clothes:variant-type:size",
-        "name" : "TALLA ROPA",
-        "categories" : [
-            "urn:zara:clothes"
-        ],
-        "attributeTypes" : [
-            "urn:zara:attribute-values:size"
-        ]
-
-    },
-    {
-        "uuid" : "5a1e1a62-9659-45f9-9375-a3b88eff3e74",
-        "urn" : "urn:zara:clothes:variant-type:stamp-size",
-        "name" : "ESTAMPADO TALLA", 
-        "categories" : [
-            "urn:zara:clothes",
-            "urn:zara:telas"
-        ],
-        "attributeTypes" : [
-            "urn:zara:attribute-values:color",
-            "urn:zara:attribute-values:stamp"
-        ]
-
-    },  
-    {
-        "uuid" : "8566298d-fff5-4568-b094-cb2a1f23b4b7",
-        "name" : "POLIESTER ALGODON COLOR", 
-        "categories" : [
-            "urn:zara:telas"
-        ],
-        "attributeTypes" : [
-            "urn:zara:attribute-values:poliester",
-            "urn:zara:attribute-values:cotton",
-            "urn:zara:attribute-values:size"
-        ]
-
-    },
-    ,  
-    {
-        "uuid" : "8566298d-fff5-4568-b094-cb2a1f23b4b7",
-        "name" : "CAR COLOR", 
-        "categories" : [
-            "urn:zara:cars"
-        ],
-        "attributeTypes" : [
-            "urn:zara:attribute-values:color"
-        ]
-
-    }
-    
-
-    
-
+  {
+    "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+    "urn": "urn:zara:clothes:variant-type:color-size",
+    "name": "COLOR TALLA",
+    "categories": ["urn:zara:clothes"],
+    "attributeTypes": [
+      "urn:zara:attribute-values:color",
+      "urn:zara:attribute-values:size"
+    ]
+  },
+  {
+    "uuid": "b75c51de-1e28-4b9a-9f32-02451f339034",
+    "urn": "urn:zara:clothes:variant-type:size",
+    "name": "TALLA ROPA",
+    "categories": ["urn:zara:clothes"],
+    "attributeTypes": ["urn:zara:attribute-values:size"]
+  },
+  {
+    "uuid": "5a1e1a62-9659-45f9-9375-a3b88eff3e74",
+    "urn": "urn:zara:clothes:variant-type:stamp-size",
+    "name": "ESTAMPADO TALLA",
+    "categories": ["urn:zara:clothes", "urn:zara:telas"],
+    "attributeTypes": [
+      "urn:zara:attribute-values:color",
+      "urn:zara:attribute-values:stamp"
+    ]
+  },
+  {
+    "uuid": "8566298d-fff5-4568-b094-cb2a1f23b4b7",
+    "name": "POLIESTER ALGODON COLOR",
+    "categories": ["urn:zara:telas"],
+    "attributeTypes": [
+      "urn:zara:attribute-values:poliester",
+      "urn:zara:attribute-values:cotton",
+      "urn:zara:attribute-values:size"
+    ]
+  },
+  {
+    "uuid": "8566298d-fff5-4568-b094-cb2a1f23b4b7",
+    "name": "CAR COLOR",
+    "categories": ["urn:zara:cars"],
+    "attributeTypes": ["urn:zara:attribute-values:color"]
+  }
 ]

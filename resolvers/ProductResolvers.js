@@ -10,6 +10,7 @@ module.exports.productAttributesResolver = (parent,args,context,info ) => {
     parent.attrs.forEach(attr => {
         const attrValue = attributeValues.find(attrVal => attrVal.urn === attr.attributeValue)
         const value = attrValue.values.find(attrVal => attrVal.urn === attr.value);
+        obj.__type = parent.productType
         obj[attrValue.fieldName] = value.label;
 
         
@@ -19,6 +20,7 @@ module.exports.productAttributesResolver = (parent,args,context,info ) => {
 
 const metaInfoResolver = (parent,args,context,info ) => {
     const mInfoObj = {};
+    mInfoObj.__type=parent.productType
     parent.metainfo.data.forEach(d => {
         const dataType = dataTypes.find(dt => dt.urn === d.type);
         if(dataType){
@@ -46,6 +48,7 @@ module.exports.productVariantsResolver = (parent,args,context,info ) => {
         variant.variantValues.forEach(val => {
             const attrValue = attributeValues.find(attrVal => attrVal.urn === val.attributeValue)
             const value = attrValue.values.find(attrVal => attrVal.urn === val.value);
+            obj.__type = parent.productType;
             obj[attrValue.fieldName] = value.label
         })
        

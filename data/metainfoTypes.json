@@ -1,36 +1,16 @@
 [
-    {
-        "uuid" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
-        "urn": "urn:zara:clothes:metainfo-type:clothes-info",
-        "name" : "CLOTHES INFO",
-        "categories" : [
-            "urn:zara:clothes"
-        ],
-        "dataTypes" : [
-            "urn:zara:data-types:image-uri",
-            "urn:zara:data-types:design"
-
-        ]
-
-    },
-    {
-        "uuid" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
-        "urn": "urn:zara:clothes:metainfo-type:clothes-variants-info",
-        "name" : "CLOTHES VARIANTS INFO",
-        "categories" : [
-            "urn:zara:clothes"
-        ],
-        "dataTypes" : [
-            "urn:zara:data-types:image-uri"
-
-        ]
-
-    }
-   
-
+  {
+    "uuid": "0e674500-518f-47a8-8e70-2243c20c2fdc",
+    "urn": "urn:zara:clothes:metainfo-type:clothes-info",
+    "name": "CLOTHES INFO",
+    "categories": ["urn:zara:clothes"],
+    "dataTypes": ["urn:zara:data-types:image-uri", "urn:zara:data-types:design"]
+  },
+  {
+    "uuid": "0e674500-518f-47a8-8e70-2243c20c2fdc",
+    "urn": "urn:zara:clothes:metainfo-type:cars-info",
+    "name": "CARS INFO",
+    "categories": ["urn:zara:cars"],
+    "dataTypes": ["urn:zara:data-types:3d-design-resource"]
+  }
 ]
-
-
-
-
-
