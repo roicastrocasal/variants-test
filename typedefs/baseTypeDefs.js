@@ -5,13 +5,14 @@ module.exports = `
         name : String
         productType : String
         categories : [String]
-        schema :  String
+        schema :  Schema
         
     }
 
     interface Variant {
         urn : String
         type: String
+        sku: String
     }
 
     type Url {
@@ -22,6 +23,8 @@ module.exports = `
         pattern: String,
         sketch: String
     }
+
+   
 
 
    

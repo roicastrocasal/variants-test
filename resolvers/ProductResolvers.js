@@ -1,6 +1,8 @@
 const products = require('../data/product.json')
 const attributeValues = require('../data/attributeValues.json')
 const dataTypes = require('../data/dataTypes.json')
+const schemas = require('../data/models.json')
+const variantTypes = require('../data/variantTypes.json')
 
 
 module.exports.productAttributesResolver = (parent,args,context,info ) => {
@@ -53,3 +55,5 @@ module.exports.productVariantsResolver = (parent,args,context,info ) => {
 };
 
 module.exports.productMetainfoResolver =  metaInfoResolver;
+
+

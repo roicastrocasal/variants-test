@@ -1,7 +1,7 @@
 [
 
     {
-        "urn" : "zara:models:simple-clothes",
+        "urn" : "urn:zara:models:simple-clothes",
         "name":  "SimpleClothes",
         "productType" : "urn:zara:clothes",
         "attributes" : [
@@ -9,13 +9,12 @@
            "urn:zara:attribute-values:quality"
             
         ],
-        "metainfo" : "zara:clothes:metainfo-type:clothes-info",
-        "variants" : {
-            "types": [
-                "zara:clothes:variant-type:color-size",
-                "zara:clothes:variant-type:stamp-size"
+        "metainfo" : "urn:zara:clothes:metainfo-type:clothes-info",
+        "variants" : [
+                "urn:zara:clothes:variant-type:color-size",
+                "urn:zara:clothes:variant-type:stamp-size"
             ]
-        }
+        
     }
 
 ]

@@ -25,7 +25,7 @@
                 "urn" : "urn:zara:data-types:design:pattern-resource",
                 "name": "pattern-resource",
                 "fieldName" : "pattern",
-                "type": "resource",
+                "type": "pattern-resource",
                 "resolver" : "PatternResolver"
 
             },
@@ -34,7 +34,7 @@
                 "name": "sketch-resource",
                 "urn" : "urn:zara:data-types:design:sketch-resource",
                 "fieldName" : "sketch",
-                "type": "resource",
+                "type": "sketch-resource",
                 "resolver" : "SketchResolver"
 
             }

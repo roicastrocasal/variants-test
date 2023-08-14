@@ -5,7 +5,7 @@ module.exports = `
         name : String
         productType : String
         categories : [String]
-        schema :  String
+        schema :  Schema
         attributes: ClothesAttribute
         metainfo: ClothesMetainfo
         variants: [ClothesVariant]
@@ -19,6 +19,7 @@ module.exports = `
     type ClothesVariant implements Variant {
         urn : String
         type: String
+        sku: String
         color: String
         size: String
         stamp: String

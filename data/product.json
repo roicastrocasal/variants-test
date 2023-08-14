@@ -202,5 +202,52 @@
                 ]
             }
         ]
+    },
+    {
+     
+        "uuid" : "2c9bead4-af64-4c0b-baba-15985d8905c3",
+        "urn" : "urn:zara:cars:product:car-model-1",
+        "name" : "CAR MODEL 1",
+        "productType" : "urn:zara:cars",
+        "categories" : [
+            "urn:zara",
+            "urn:zara:cars"
+        ],
+        "schema" : "urn:zara:models:simple-car",
+        "attrs" : [
+            {
+                "attributeValue" : "urn:zara:attribute-values:car-type",
+                "value" : "urn:zara:attribute-values:car-type:berlina"
+            },
+            {
+                "attributeValue" : "urn:zara:attribute-values:car-groups",
+                "value" : "urn:zara:attribute-values:car-groups:group1"
+            }
+        ],
+        "variants" : [
+            {
+                "id" : 0,
+                "urn" : "urn:zara:cars:product:car-model-1:0",
+                "type" : "urn:zara:cars:variant-type:car-color",
+                "variantValues": [
+                    {
+                        "attributeValue" : "urn:zara:attribute-values:color",
+                        "value" : "urn:zara:attribute-values:color:907"
+                    }
+                ]
+            },
+            {
+                "id" : 0,
+                "urn" : "urn:zara:cars:product:car-model-1:0",
+                "type" : "urn:zara:cars:variant-type:car-color",
+                "variantValues": [
+                    {
+                        "attributeValue" : "urn:zara:attribute-values:color",
+                        "value" : "urn:zara:attribute-values:color:900"
+                    }
+                ]
+            }
+
+        ]
     }
 ]
