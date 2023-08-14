@@ -48,7 +48,7 @@
         "uuid": "73eddc19-9998-4941-aeed-af8715440736",
         "urn": "urn:zara:data-types:design:3d-file-resource",
         "name": "pattern-resource",
-        "fieldName": "3dfile",
+        "fieldName": "file3d",
         "type": "3d-file-resource",
         "resolver": "3dFileResolver"
       },
@@ -56,7 +56,7 @@
         "uuid": "73eddc19-9998-4941-aeed-af8715440736",
         "name": "sketch-resource",
         "urn": "urn:zara:data-types:design:3d-render-resource",
-        "fieldName": "3drender",
+        "fieldName": "render3d",
         "type": "3d-render-resource",
         "resolver": "3dRentderResolver"
       }

@@ -238,6 +238,7 @@
       {
         "id": 0,
         "urn": "urn:zara:cars:product:car-model-1:0",
+        "sku" : "1234567",
         "type": "urn:zara:cars:variant-type:car-color",
         "variantValues": [
           {
@@ -249,6 +250,7 @@
       {
         "id": 0,
         "urn": "urn:zara:cars:product:car-model-1:0",
+        "sku" : "1234567",
         "type": "urn:zara:cars:variant-type:car-color",
         "variantValues": [
           {

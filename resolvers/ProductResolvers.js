@@ -21,22 +21,25 @@ module.exports.productAttributesResolver = (parent,args,context,info ) => {
 const metaInfoResolver = (parent,args,context,info ) => {
     const mInfoObj = {};
     mInfoObj.__type = parent.productType
-    parent.metainfo.data.forEach(d => {
-        const dataType = dataTypes.find(dt => dt.urn === d.type);
-        if(dataType){
-            mInfoObj[dataType.fieldName] = {};
-            d.params.forEach(param => {
-                const dataTypeParam = dataType.params.find(dtParam => dtParam.urn === param.type)
-                if(dataTypeParam && dataTypeParam.fieldName){
-                    mInfoObj[dataType.fieldName][dataTypeParam.fieldName] = param.value
-                }
-              
-
-
-            })
-        }
-        
-    })
+    if(parent.metainfo && parent.metainfo.data){
+        parent.metainfo.data.forEach(d => {
+            const dataType = dataTypes.find(dt => dt.urn === d.type);
+            if(dataType){
+                mInfoObj[dataType.fieldName] = {};
+                d.params.forEach(param => {
+                    const dataTypeParam = dataType.params.find(dtParam => dtParam.urn === param.type)
+                    if(dataTypeParam && dataTypeParam.fieldName){
+                        mInfoObj[dataType.fieldName][dataTypeParam.fieldName] = param.value
+                    }
+                  
+    
+    
+                })
+            }
+            
+        })
+    }
+    
     return mInfoObj;
 }
 
@@ -45,6 +48,7 @@ module.exports.productVariantsResolver = (parent,args,context,info ) => {
         const obj = {}
         obj.urn = variant.urn;
         obj.type = variant.type;
+        obj.sku = variant.sku;
         variant.variantValues.forEach(val => {
             const attrValue = attributeValues.find(attrVal => attrVal.urn === val.attributeValue)
             const value = attrValue.values.find(attrVal => attrVal.urn === val.value);

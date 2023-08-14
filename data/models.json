@@ -15,6 +15,22 @@
                 "urn:zara:clothes:variant-type:stamp-size"
             ]
         
+    },
+    {
+        "urn" : "urn:zara:models:simple-car",
+        "name":  "SimpleCar",
+        "productType" : "urn:zara:cars",
+        "attributes" : [
+            "urn:zara:attribute-values:car-type",
+            "urn:zara:attribute-values:car-groups"
+            
+        ],
+        "metainfo" : "urn:zara:clothes:metainfo-type:clothes-info",
+        "variants" : [
+                "urn:zara:clothes:variant-type:color-size",
+                "urn:zara:clothes:variant-type:stamp-size"
+            ]
+        
     }
 
 ]
