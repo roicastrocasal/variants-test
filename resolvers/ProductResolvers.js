@@ -20,7 +20,7 @@ module.exports.productAttributesResolver = (parent,args,context,info ) => {
 
 const metaInfoResolver = (parent,args,context,info ) => {
     const mInfoObj = {};
-    mInfoObj.__type=parent.productType
+    mInfoObj.__type = parent.productType
     parent.metainfo.data.forEach(d => {
         const dataType = dataTypes.find(dt => dt.urn === d.type);
         if(dataType){

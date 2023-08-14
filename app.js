@@ -1,7 +1,9 @@
 const express = require('express');
+const { loadFiles } = require('@graphql-tools/load-files')
 const { ApolloServer, gql } = require('@apollo/server');
 const { startStandaloneServer } = require('@apollo/server/standalone');
 const products = require('./data/product.json')
+const configModelTypes = require('./config/modelTypes.json')
 const {
     productAttributesResolver,
     productMetainfoResolver,
@@ -16,11 +18,6 @@ const {
     schemaMetainfoDatatypesResolver
 } = require('./resolvers/ValidationSchemaResolver')
 
- const genericTypeDefs = require('./typedefs/baseTypeDefs')
- const clothesTypeDefs = require('./typedefs/clothesTypeDefs')
- const validationSchemaDefs = require('./typedefs/validationSchemaDefs')
-// Construct a schema, using GraphQL schema language
-const typeDefs = [genericTypeDefs,clothesTypeDefs,validationSchemaDefs];
 
 
 
@@ -37,33 +34,20 @@ const resolvers = {
     },
     ProductAttribute: {
         __resolveType: (parent) => { 
-            switch (parent.__type) { 
-                case "urn:zara:clothes":
-                    return 'ClothesAttribute'
-                default:
-                    return 'CarsAttribute'
-            }
+            return configModelTypes
+                .find(config => config.type === parent.__type).attribute
         }
     },
     ProductVariant: {
        __resolveType: (parent) => { 
-            switch (parent.__type) { 
-                case "urn:zara:clothes":
-                    return 'ClothesVariant'
-                default:
-                    return 'CarsVariant'
-            }
+            return configModelTypes
+                .find(config => config.type === parent.__type).variant
         }
     },
     ProductMetainfo: {
        __resolveType: (parent) => { 
-            switch (parent.__type) { 
-                case "urn:zara:clothes":
-                    return 'ClothesMetainfo'
-                case "urn:zara:cars":
-                    return 'CarsMetainfo'
-               
-            }
+            return configModelTypes
+                .find(config => config.type === parent.__type).metainfo
         }
     },
     Schema : {
@@ -80,9 +64,10 @@ const resolvers = {
 };
 
 module.exports.start = async () => {
+    const typeDefs= await loadFiles('./schemas/*.graphql');
     const server = new ApolloServer({
         typeDefs,
-        resolvers,
+        resolvers
       });
     const startInstance = await startStandaloneServer(server, {
         listen: { port: 4000 },
