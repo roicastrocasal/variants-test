@@ -2,37 +2,40 @@
 
     {
         "uuid" : "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+        "urn" : "zara:clothes:variant-type:color-size",
         "name" : "COLOR TALLA",
         "categories" : [
             "urn:zara:clothes"
         ],
         "attributeTypes" : [
-            "725a77de-8449-4245-87e1-06f97048f636",
-            "74eec763-3ae7-41e5-b126-670711c09102"
+            "urn:zara:attribute-values:color",
+            "urn:zara:attribute-values:size"
         ]
 
     },
     {
         "uuid" : "b75c51de-1e28-4b9a-9f32-02451f339034",
+        "urn" : "zara:clothes:variant-type:size",
         "name" : "TALLA ROPA",
         "categories" : [
             "urn:zara:clothes"
         ],
         "attributeTypes" : [
-            "74eec763-3ae7-41e5-b126-670711c09102"
+            "urn:zara:attribute-values:size"
         ]
 
     },
     {
         "uuid" : "5a1e1a62-9659-45f9-9375-a3b88eff3e74",
+        "urn" : "zara:clothes:variant-type:stamp-size",
         "name" : "ESTAMPADO TALLA", 
         "categories" : [
             "urn:zara:clothes",
             "urn:zara:telas"
         ],
         "attributeTypes" : [
-            "e304616f-51cd-49ee-8c06-a7e092f684bf",
-            "74eec763-3ae7-41e5-b126-670711c09102"
+            "urn:zara:attribute-values:color",
+            "urn:zara:attribute-values:stamp"
         ]
 
     },  
@@ -43,20 +46,9 @@
             "urn:zara:telas"
         ],
         "attributeTypes" : [
-            "9136d7ff-9601-45ee-8d54-e0870bc4d467",
-            "19603a1d-a134-460c-827d-adacbf4f9169",
-            "725a77de-8449-4245-87e1-06f97048f636"
-        ]
-
-    },
-    {
-        "uuid" : "a0f7981a-cbdf-45cd-a2b4-e0665e56855d",
-        "name" : "CAR COLOR", 
-        "categories" : [
-            "urn:zara:cars"
-        ],
-        "attributeTypes" : [
-            "725a77de-8449-4245-87e1-06f97048f636"
+            "urn:zara:attribute-values:poliester",
+            "urn:zara:attribute-values:cotton",
+            "urn:zara:attribute-values:size"
         ]
 
     }

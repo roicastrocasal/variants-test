@@ -1,18 +1,33 @@
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
-var fs = require('fs');
+const express = require('express');
+const { ApolloServer, gql } = require('@apollo/server');
+const { startStandaloneServer } = require('@apollo/server/standalone');
+const products = require('./data/product.json')
+const {productAttributesResolver,productMetainfoResolver,productVariantsResolver} = require('./resolvers/ProductResolvers')
+ const genericTypeDefs = require('./typedefs/baseTypeDefs')
+ const clothesTypeDefs = require('./typedefs/clothesTypeDefs')
+// Construct a schema, using GraphQL schema language
+const typeDefs = [genericTypeDefs,clothesTypeDefs];
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "*");
-    next();
-});
-app.use( bodyParser.json() );       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-    extended: true
-}));
+// Provide resolver functions for your schema fields
+const resolvers = {
+    Query: {
+        product: (_, args) => products.find(p => p.urn === args.id)
+    },
+    ClothesProduct : {
+        attributes : productAttributesResolver,
+        metainfo: productMetainfoResolver,
+        variants: productVariantsResolver,
+    }
+};
 
-
-module.exports = app;
+module.exports.start = async () => {
+    const server = new ApolloServer({
+        typeDefs,
+        resolvers,
+      });
+    const startInstance = await startStandaloneServer(server, {
+        listen: { port: 4000 },
+      });
+    console.log("start server");
+    return startInstance;
+};

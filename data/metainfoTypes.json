@@ -1,63 +1,32 @@
 [
     {
         "uuid" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
+        "urn": "urn:zara:clothes:metainfo-type:clothes-info",
         "name" : "CLOTHES INFO",
         "categories" : [
             "urn:zara:clothes"
         ],
         "dataTypes" : [
-            {
-                "uuid" : "a9db6eb6-37c6-49d8-9545-181734a11c52",
-                "name" : "IMAGE_URI",
-                "mandatory" : true
-            },
-            {
-                "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
-                "name" : "PRICE",
-                "mandatory" : true
-            }
+            "urn:zara:data-types:image-uri",
+            "urn:zara:data-types:design"
 
         ]
 
     },
     {
-        "uuid" : "c2192d64-ce5a-4e1d-8c4e-c02ec215f60f",
-        "name" : "SHOES INFO",
+        "uuid" : "0e674500-518f-47a8-8e70-2243c20c2fdc",
+        "urn": "urn:zara:clothes:metainfo-type:clothes-variants-info",
+        "name" : "CLOTHES VARIANTS INFO",
         "categories" : [
-            "urn:zara:shoes"
+            "urn:zara:clothes"
         ],
         "dataTypes" : [
-            {
-                "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
-                "name" : "MODELING RESOURCE REFERENCE",
-                "mandatory" : true
-            },
-            {
-                "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
-                "name" : "PRICE REFERENCE",
-                "mandatory" : true
-            }
-
-        ]
-
-    },
-    {
-        "uuid" : "0331c1d9-c1fe-41d5-b84d-5d5ea0e81126",
-        "name" : "CAR INFO",
-        "categories" : [
-            "urn:zara:cars"
-        ],
-        "dataTypes" : [
-            {
-                "uuid" : "2a67a4ff-8c65-4d50-9354-6a523a2d1d3d",
-                "name" : "MODELING RESOURCE REFERENCE",
-                "mandatory" : true
-            }
+            "urn:zara:data-types:image-uri"
 
         ]
 
     }
-
+   
 
 ]
 
