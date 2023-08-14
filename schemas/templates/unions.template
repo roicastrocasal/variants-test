@@ -1,0 +1,5 @@
+union ProductAttribute = <%print(models.map(model => model.name+'Attribute').join(' | '))%>
+
+union ProductVariant = <%print(models.map(model => model.name+'Variant').join(' | '))%>
+
+union ProductMetainfo = <%print(models.map(model => model.name+'Metainfo').join(' | '))%>

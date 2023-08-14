@@ -1,0 +1,14 @@
+[
+  {
+    "type": "urn:zara:clothes",
+    "metainfo": "SimpleClothesMetainfo",
+    "variant": "SimpleClothesVariant",
+    "attribute": "SimpleClothesAttribute"
+  },
+  {
+    "type": "urn:zara:cars",
+    "metainfo": "SimpleCarMetainfo",
+    "variant": "SimpleCarVariant",
+    "attribute": "SimpleCarAttribute"
+  }
+]

@@ -3,7 +3,7 @@ const { loadFiles } = require('@graphql-tools/load-files')
 const { ApolloServer, gql } = require('@apollo/server');
 const { startStandaloneServer } = require('@apollo/server/standalone');
 const products = require('./data/product.json')
-const configModelTypes = require('./config/modelTypes.json')
+const configModelTypes = require('./config/modelTypes-generated.json')
 const {
     productAttributesResolver,
     productMetainfoResolver,
@@ -17,7 +17,7 @@ const {
     productSchemaMetainfo,
     schemaMetainfoDatatypesResolver
 } = require('./resolvers/ValidationSchemaResolver')
-
+const generateModel = require('./schemas/templates/generateModel')
 
 
 
@@ -64,6 +64,7 @@ const resolvers = {
 };
 
 module.exports.start = async () => {
+    generateModel();
     const typeDefs= await loadFiles('./schemas/*.graphql');
     const server = new ApolloServer({
         typeDefs,

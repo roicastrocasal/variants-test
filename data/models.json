@@ -25,10 +25,9 @@
             "urn:zara:attribute-values:car-groups"
             
         ],
-        "metainfo" : "urn:zara:clothes:metainfo-type:clothes-info",
+        "metainfo" : "urn:zara:clothes:metainfo-type:cars-info",
         "variants" : [
-                "urn:zara:clothes:variant-type:color-size",
-                "urn:zara:clothes:variant-type:stamp-size"
+            "urn:zara:cars:variant-type:car-color"
             ]
         
     }

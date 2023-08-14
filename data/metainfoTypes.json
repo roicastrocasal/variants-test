@@ -11,6 +11,6 @@
     "urn": "urn:zara:clothes:metainfo-type:cars-info",
     "name": "CARS INFO",
     "categories": ["urn:zara:cars"],
-    "dataTypes": ["urn:zara:data-types:3d-design-resource"]
+    "dataTypes": ["urn:zara:data-types:3d-design"]
   }
 ]

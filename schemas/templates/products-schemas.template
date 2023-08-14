@@ -1,0 +1,23 @@
+<% const metainfoModelMap = {} %>
+<%metainfoModelMap['image'] = "Url" %>
+<%metainfoModelMap['design'] = "Design" %>
+<%metainfoModelMap['design3d'] = "Design3d" %>
+
+
+type <%=name%>Attribute {
+<% _(attributes).forEach(attr =>print('    '+attr.fieldName+': String\n') ) %> 
+  
+}
+
+type <%=name%>Variant implements Variant {
+    urn: String
+    type: String
+    sku: String
+<% _(variants).forEach(attr =>print('    '+attr.fieldName+': String\n') ) %> 
+    vMetainfo: <%=name%>Metainfo
+}
+
+type <%=name%>Metainfo {
+<% _(metainfoTypes).forEach(mInfo =>print('    '+mInfo.fieldName+': '+metainfoModelMap[mInfo.fieldName]+'\n') ) %>   
+}
+
