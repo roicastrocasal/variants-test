@@ -95,7 +95,7 @@
 
             },
             {
-                "urn" : "urn:zara:attribute-values:<color-id>:<color-907-value-id>",
+                "urn" : "urn:attribute-values:<color-id>:<color-907-value-id>",
                 "uuid" : "30b341df-5213-41b5-b740-101127f837bf",
                 "label" : "907",
                 "value" : 907
@@ -108,25 +108,31 @@
     },
     {
         "uuid" : "725a77de-8449-4245-87e1-06f97048f636",
-        "urn" : "urn:zara:attribute-values:<color-id>",
+        "urn" : "urn:zara:attribute-values:<family-id>",
         "name" : "Familia",
         "fieldName" : "family",
         "type" : "VALUES",
+        "dataType": "Int",
         "categories" : [
             "urn:zara:clothes",
             "urn:zara:shoes"
         ],
         "values" : [
             {
-                "urn" : "urn:zara:attribute-values:<color-id>:values:<color-900-value-id>",
+                "urn" : "urn:zara:attribute-values:<family-id>:values:<family-pantalon-value-id>",
                 "uuid" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
-                "label" : "PANTALON"
+                "label" : "Pantalón",
+                "value" : 1
 
             },
             {
-                "urn" : "urn:zara:attribute-values:color:907",
-                "uuid" : "30b341df-5213-41b5-b740-101127f837bf",
-                "label" : "CAMISA"
+                {
+                    "urn" : "urn:zara:attribute-values:<family-id>:values:<family-pantalon-value-id>",
+                    "uuid" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+                    "label" : "Vestido",
+                    "value" : 2
+    
+                }
 
             }
 
@@ -134,6 +140,69 @@
         ]
 
     },
+    {
+        "uuid" : "725a77de-8449-4245-87e1-06f97048f636",
+        "urn" : "urn:zara:attribute-values:<subfamily-id>",
+        "name" : "Subfamilia",
+        "fieldName" : "Subfamily",
+        "type" : "VALUES",
+        "dataType": "Int",
+        "categories" : [
+            "urn:zara:clothes",
+            "urn:zara:shoes"
+        ],
+        "values" : [
+            {
+                "urn" : "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-pantalon-value-id>",
+                "uuid" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+                "label" : "W.Pantalón",
+                "value" : 500
+
+            },
+            {
+                {
+                    "urn" : "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-pantalon-value-id>",
+                    "uuid" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+                    "label" : "L.Vestido",
+                    "value" : 150
+    
+                }
+
+            }
+
+
+        ]
+
+    },
+    {
+        "uuid" : "725a77de-8449-4245-87e1-06f97048f636",
+        "urn" : "urn:zara:attribute-values:<firstattribute-id>",
+        "name" : "Primer atributo Comercial",
+        "fieldName" : "firstAttribute",
+        "type" : "VALUES",
+        "dataType": "Int",
+        "categories" : [
+            "urn:zara:clothes",
+            "urn:zara:shoes"
+        ],
+        "values" : [
+            {
+                "urn" : "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-pantalon-value-id>",
+                "uuid" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+                "label" : "W.Pantalón",
+                "value" : 1000100
+
+            },
+            {
+                "urn" : "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-pantalon-value-id>",
+                "uuid" : "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+                "label" : "L.Vestido",
+                "value" : 150
+
+            }
+        ]
+
+    }
     
     
 
