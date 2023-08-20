@@ -1,35 +1,35 @@
 [
-
-    {
-        "urn" : "urn:zara:models:simple-clothes",
-        "name":  "SimpleClothes",
-        "productType" : "urn:zara:clothes",
-        "attributes" : [
-           "urn:zara:attribute-values:model",
-           "urn:zara:attribute-values:quality"
-            
-        ],
-        "metainfo" : "urn:zara:clothes:metainfo-type:clothes-info",
-        "variants" : [
-                "urn:zara:clothes:variant-type:color-size",
-                "urn:zara:clothes:variant-type:stamp-size"
-            ]
-        
-    },
-    {
-        "urn" : "urn:zara:models:simple-car",
-        "name":  "SimpleCar",
-        "productType" : "urn:zara:cars",
-        "attributes" : [
-            "urn:zara:attribute-values:car-type",
-            "urn:zara:attribute-values:car-groups"
-            
-        ],
-        "metainfo" : "urn:zara:clothes:metainfo-type:cars-info",
-        "variants" : [
-            "urn:zara:cars:variant-type:car-color"
-            ]
-        
-    }
-
+  {
+    "urn": "urn:zara:models:simple-clothes",
+    "name": "SimpleClothes",
+    "productType": "urn:zara:clothes",
+    "attributes": [
+      {
+        "urn": "urn:zara:attribute-values:<family-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<subfamily-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<firstattribute-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<secondattribute-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<productpresentation-id>",
+        "multivaluated": false,
+        "mandatory": true
+      }
+    ],
+    "variants": ["urn:zara:clothes:variant-type:model-quality-color-size"]
+  }
 ]

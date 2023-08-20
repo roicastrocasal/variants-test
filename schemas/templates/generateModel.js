@@ -4,8 +4,6 @@ const fs = require('fs');
 const models = require('../../data/models.json');
 const attributeValues = require('../../data/attributeValues.json');
 const variantTypes = require('../../data/variantTypes.json');
-const metainfoTypes = require('../../data/metainfoTypes.json')
-const dataTypes = require('../../data/dataTypes.json')
 
 module.exports= () => {
     let modelStr = '';
@@ -16,7 +14,15 @@ module.exports= () => {
 
     models.forEach(model => {
         const data = {};
-        data.attributes = model.attributes.map(attr => attributeValues.find(attrVal => attrVal.urn === attr)).map(attrVal => ({fieldName : attrVal.fieldName}))
+        data.attributes = model.attributes.map(attr => (
+            {
+                ...attributeValues.find(attrVal => attrVal.urn === attr.urn),
+                multivaluated: attr.multivaluated
+            }
+        )).map(attrVal => ({
+            fieldName: attrVal.fieldName,
+            multivaluated: attrVal.multivaluated
+        }))
         data.variants = _.uniq(model.variants
                     .flatMap(variant => variantTypes
                         .find(varType => varType.urn===variant)
@@ -24,18 +30,12 @@ module.exports= () => {
                         .map(attr => attributeValues
                             .find(attrVal => attrVal.urn === attr))
                             .map(attrVal => attrVal.fieldName))).map(val => ({fieldName: val}))
-        data.metainfoTypes= metainfoTypes
-                .find(mInfoTypes => mInfoTypes.urn === model.metainfo)
-                .dataTypes
-                .map(dataType => dataTypes
-                    .find(dt => dataType === dt.urn))
-                    .map(dt => ({fieldName: dt.fieldName}))
+        
         
         modelStr = modelStr +'\n'+ compiled({
             name: model.name,
             attributes: data.attributes,
-            variants: data.variants,
-            metainfoTypes: data.metainfoTypes
+            variants: data.variants
         });
 
         
@@ -45,7 +45,6 @@ module.exports= () => {
 
     const configModelTypes = models.map(model => ({
         type: model.productType,
-        metainfo: model.name+"Metainfo",
         variant: model.name+"Variant",
         attribute: model.name+"Attribute"
     }))

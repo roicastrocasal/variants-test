@@ -1,0 +1,19 @@
+type SimpleClothesAttribute {
+  model: String
+  quality: String
+}
+
+type SimpleClothesVariant implements Variant {
+  urn: String
+  type: String
+  sku: String
+  color: String
+  size: String
+  stamp: String
+
+  vMetainfo: SimpleClothesMetainfo
+}
+
+union ProductAttribute = SimpleClothesAttribute | SimpleCarAttribute
+
+union ProductVariant = SimpleClothesVariant | SimpleCarVariant

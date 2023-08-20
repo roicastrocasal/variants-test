@@ -3,19 +3,17 @@ const { loadFiles } = require('@graphql-tools/load-files')
 const { ApolloServer, gql } = require('@apollo/server');
 const { startStandaloneServer } = require('@apollo/server/standalone');
 const products = require('./data/product.json')
+const models = require('./data/models.json')
 const configModelTypes = require('./config/modelTypes-generated.json')
 const {
     productAttributesResolver,
-    productMetainfoResolver,
     productVariantsResolver
 } = require('./resolvers/ProductResolvers')
 const {
     productSchemaResolver,
     productSchemaAttributesResolver,
     productSchemaVariants,
-    productSchemaVariantsAttributes,
-    productSchemaMetainfo,
-    schemaMetainfoDatatypesResolver
+    productSchemaVariantsAttributes
 } = require('./resolvers/ValidationSchemaResolver')
 const generateModel = require('./schemas/templates/generateModel')
 
@@ -24,13 +22,27 @@ const generateModel = require('./schemas/templates/generateModel')
 // Provide resolver functions for your schema fields
 const resolvers = {
     Query: {
-        product: (_, args) => products.find(p => p.urn === args.id)
+        product: (_, args) => products.find(p => p.urn === args.id),
+        schema: (_, args) => models.find(m => m.urn === args.urn),
+        plainProduct: (_, args) => {
+            return products.filter(p => p.urn === args.urn)
+            .flatMap(p => { 
+                
+                return p.variants.map(variant => { 
+                    return {
+                        __type: p.productType,
+                        urn: variant.urn,
+                        ...variant.variantValues,
+                        ...p.attrs
+                    }
+                })
+
+            })
+        } 
     },
     Product : {
         attributes : productAttributesResolver,
-        metainfo: productMetainfoResolver,
-        variants: productVariantsResolver,
-        schema: productSchemaResolver
+        variants: productVariantsResolver
     },
     ProductAttribute: {
         __resolveType: (parent) => { 
@@ -44,27 +56,27 @@ const resolvers = {
                 .find(config => config.type === parent.__type).variant
         }
     },
-    ProductMetainfo: {
+    ProductPlainVariant: {
        __resolveType: (parent) => { 
             return configModelTypes
-                .find(config => config.type === parent.__type).metainfo
+                .find(config => config.type === parent.__type).plainVariant
         }
+       
+    },
+    ClothesPlainVariant: {
+        attrs: productAttributesResolver
     },
     Schema : {
         attributes: productSchemaAttributesResolver,
-        variants: productSchemaVariants,
-        metainfo : productSchemaMetainfo
+        variants: productSchemaVariants
     },
     SchemaVariant: {
         attributes : productSchemaVariantsAttributes
-    },
-    SchemaMetainfo: {
-        dataTypes: schemaMetainfoDatatypesResolver
     }
 };
 
 module.exports.start = async () => {
-    generateModel();
+    //generateModel();
     const typeDefs= await loadFiles('./schemas/*.graphql');
     const server = new ApolloServer({
         typeDefs,

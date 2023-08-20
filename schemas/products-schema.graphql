@@ -1,0 +1,52 @@
+# Clothes custom types
+type ClothesAttribute {
+  family: AttributeInt
+  subfamily: AttributeInt
+  firstComercialAttribute: AttributeInt
+  secondComercialAttribute: AttributeInt
+  productPresentation: AttributeInt
+}
+
+type AttributeInt {
+  urn: String
+  label: String
+  value: Int
+}
+
+type AttributeString {
+  urn: String
+  label: String
+  value: String
+}
+
+type ClothesVariant implements Variant {
+  urn: String
+  model: AttributeInt
+  quality: AttributeInt
+  color: AttributeInt
+  size: AttributeInt
+  drType: [AttributeInt]
+}
+
+type ClothesPlainVariant {
+  urn: String
+  attrs: ClothesPlainVariantAttribute
+}
+
+type ClothesPlainVariantAttribute {
+  model: AttributeInt
+  quality: AttributeInt
+  color: AttributeInt
+  size: AttributeInt
+  drType: [AttributeInt]
+  family: AttributeInt
+  subfamily: AttributeInt
+  firstComercialAttribute: AttributeInt
+  secondComercialAttribute: AttributeInt
+  productPresentation: AttributeInt
+}
+
+# Union definitions
+union ProductAttribute = ClothesAttribute
+union ProductVariant = ClothesVariant
+union ProductPlainVariant = ClothesPlainVariant

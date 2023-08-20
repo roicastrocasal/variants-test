@@ -12,250 +12,64 @@
     "schema": "urn:zara:models:simple-clothes",
     "attrs": [
       {
-        "attributeValue": "urn:zara:attribute-values:model",
-        "value": "urn:zara:attribute-values:model:100"
+        "attributeValue": "urn:zara:attribute-values:<family-id>",
+        "multivaluated": false,
+        "value": "urn:zara:attribute-values:<family-id>:values:<family-pantalon-value-id>"
       },
       {
-        "attributeValue": "urn:zara:attribute-values:quality",
-        "value": "urn:zara:attribute-values:quality:2000"
-      }
-    ],
-    "metainfo": {
-      "type": "urn:zara:clothes:metainfo-type:clothes-info",
-      "data": [
-        {
-          "type": "urn:zara:data-types:image-uri",
-          "params": [
-            {
-              "type": "urn:zara:data-types:image-uri:link",
-              "value": "http://amanda-resources/image-color900"
-            }
-          ]
-        },
-        {
-          "type": "urn:zara:data-types:design",
-          "params": [
-            {
-              "type": "urn:zara:data-types:design:pattern-resource",
-              "value": "urn:zara:clothes:design:pant-cort-design"
-            },
-            {
-              "type": "urn:zara:data-types:design:sketch-resource",
-              "value": "urn:zara:clothes:design:pant-cort-scketh"
-            }
-          ]
-        }
-      ]
-    },
-    "variants": [
-      {
-        "id": 0,
-        "urn": "urn:zara:clothes:product:pantalon-corto:variant:0",
-        "type": "zara:clothes:variant-type:color-size",
-        "sku": "55aaa434-9910-421c-b7e7-a015fda6ed04",
-        "metainfo": {
-          "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
-          "data": [
-            {
-              "type": "urn:zara:data-types:image-uri",
-              "params": [
-                {
-                  "type": "urn:zara:data-types:image-uri:link",
-                  "value": "http://amanda-resources/image-color900"
-                }
-              ]
-            }
-          ]
-        },
-        "variantValues": [
-          {
-            "attributeValue": "urn:zara:attribute-values:color",
-            "value": "urn:zara:attribute-values:color:900"
-          },
-          {
-            "attributeValue": "urn:zara:attribute-values:size",
-            "value": "urn:zara:attribute-values:size:l"
-          }
-        ]
+        "attributeValue": "urn:zara:attribute-values:<subfamily-id>",
+        "multivaluated": false,
+        "value": "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-pantalon-value-id>"
       },
       {
-        "id": 1,
-        "urn": "urn:zara:clothes:product:pantalon-corto:variant:1",
-        "type": "zara:clothes:variant-type:color-size",
-        "sku": "55aaa434-9910-421c-b7e7-a015fda6ed04",
-        "metainfo": {
-          "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
-          "data": [
-            {
-              "type": "urn:zara:data-types:image-uri",
-              "params": [
-                {
-                  "type": "urn:zara:data-types:image-uri:link",
-                  "value": "http://amanda-resources/image-color900"
-                }
-              ]
-            }
-          ]
-        },
-        "variantValues": [
-          {
-            "attributeValue": "urn:zara:attribute-values:color",
-            "value": "urn:zara:attribute-values:color:900"
-          },
-          {
-            "attributeValue": "urn:zara:attribute-values:size",
-            "value": "urn:zara:attribute-values:size:xl"
-          }
-        ]
+        "attributeValue": "urn:zara:attribute-values:<firstattribute-id>",
+        "multivaluated": false,
+        "value": "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-pantalon-value-id>"
       },
       {
-        "id": 2,
-        "urn": "urn:zara:clothes:product:pantalon-corto:variant:2",
-        "type": "zara:clothes:variant-type:color-size",
-        "sku": "45e66e3b-2cc3-45fb-92d0-e3fc27300cce",
-        "metainfo": {
-          "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
-          "data": [
-            {
-              "type": "urn:zara:data-types:image-uri",
-              "params": [
-                {
-                  "type": "urn:zara:data-types:image-uri:link",
-                  "value": "http://amanda-resources/image-color907"
-                }
-              ]
-            }
-          ]
-        },
-        "variantValues": [
-          {
-            "attributeValue": "urn:zara:attribute-values:color",
-            "value": "urn:zara:attribute-values:color:907"
-          },
-          {
-            "attributeValue": "urn:zara:attribute-values:size",
-            "value": "urn:zara:attribute-values:size:xl"
-          }
-        ]
+        "attributeValue": "urn:zara:attribute-values:<secondattribute-id>",
+        "multivaluated": false,
+        "value": "urn:zara:attribute-values:<secondattribute-id>:values:<secondattribute-pantalon-value-id>"
       },
       {
-        "id": 2,
-        "urn": "urn:zara:clothes:product:pantalon-corto:variant:3",
-        "type": "zara:clothes:variant-type:color-size",
-        "sku": "7e63f3b7-38c3-4232-9dd0-91021dfdc245",
-        "metainfo": {
-          "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
-          "data": [
-            {
-              "type": "urn:zara:data-types:image-uri",
-              "params": [
-                {
-                  "type": "urn:zara:data-types:image-uri:link",
-                  "value": "http://amanda-resources/image-color907"
-                }
-              ]
-            }
-          ]
-        },
-        "variantValues": [
-          {
-            "attributeValue": "urn:zara:attribute-values:color",
-            "value": "urn:zara:attribute-values:color:907"
-          },
-          {
-            "attributeValue": "urn:zara:attribute-values:size",
-            "value": "urn:zara:attribute-values:size:m"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "urn": "urn:zara:clothes:product:pantalon-corto:variant:4",
-        "type": "zara:clothes:variant-type:stamp-size",
-        "metainfo": {
-          "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
-          "data": [
-            {
-              "type": "urn:zara:data-types:image-uri",
-              "params": [
-                {
-                  "type": "urn:zara:data-types:image-uri:link",
-                  "value": "http://amanda-resources/image-stamp-flowers"
-                }
-              ]
-            }
-          ]
-        },
-        "variantValues": [
-          {
-            "attributeValue": "urn:zara:attribute-values:color",
-            "value": "urn:zara:attribute-values:color:907"
-          },
-          {
-            "attributeValue": "urn:zara:attribute-values:stamp",
-            "value": "urn:zara:attribute-values:stamp:flowers"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "uuid": "2c9bead4-af64-4c0b-baba-15985d8905c3",
-    "urn": "urn:zara:cars:product:car-model-1",
-    "name": "CAR MODEL 1",
-    "productType": "urn:zara:cars",
-    "categories": ["urn:zara", "urn:zara:cars"],
-    "schema": "urn:zara:models:simple-car",
-    "metainfo": {
-      "type": "urn:zara:cars:metainfo-type:cars-info",
-      "data": [
-        {
-          "type": "urn:zara:data-types:3d-design",
-          "params": [
-            {
-              "type": "urn:zara:data-types:design:3d-file-resource",
-              "value": "urn:zara:cars:design:3d-file-resource:car1"
-            },
-            {
-              "type": "urn:zara:data-types:design:3d-render-resource",
-              "value": "urn:zara:cars:design:3d-render-resource:car1"
-            }
-          ]
-        }
-      ]
-    },
-    "attrs": [
-      {
-        "attributeValue": "urn:zara:attribute-values:car-type",
-        "value": "urn:zara:attribute-values:car-type:berlina"
-      },
-      {
-        "attributeValue": "urn:zara:attribute-values:car-groups",
-        "value": "urn:zara:attribute-values:car-groups:group1"
+        "attributeValue": "urn:zara:attribute-values:<productpresentation-id>",
+        "multivaluated": false,
+        "value": "urn:zara:attribute-values:<productpresentation-id>:values:<productpresentation-confeccion-value-id>"
       }
     ],
     "variants": [
       {
         "id": 0,
-        "urn": "urn:zara:cars:product:car-model-1:0",
-        "sku" : "1234567",
-        "type": "urn:zara:cars:variant-type:car-color",
+        "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-1-id>",
+        "type": "zara:clothes:variant-type:model-quality-color-size",
         "variantValues": [
           {
-            "attributeValue": "urn:zara:attribute-values:color",
-            "value": "urn:zara:attribute-values:color:907"
-          }
-        ]
-      },
-      {
-        "id": 0,
-        "urn": "urn:zara:cars:product:car-model-1:0",
-        "sku" : "1234567",
-        "type": "urn:zara:cars:variant-type:car-color",
-        "variantValues": [
+            "attributeValue": "urn:zara:attribute-values:<model-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<model-id>:values:<model-6917-value-id>"
+          },
           {
-            "attributeValue": "urn:zara:attribute-values:color",
-            "value": "urn:zara:attribute-values:color:900"
+            "attributeValue": "urn:zara:attribute-values:<quality-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<quality-id>:values:<quality-47-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<color-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<color-id>:values:<color-900-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<size-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<size-id>:values:<size-M-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<drtype-id>",
+            "multivaluated": true,
+            "value": [
+              "urn:zara:attribute-values:<drtype-id>:values:<drtype-distribucion-value-id>",
+              "urn:zara:attribute-values:<drtype-id>:values:<drtype-commercial-value-id>"
+            ]
           }
         ]
       }
