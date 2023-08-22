@@ -9,10 +9,12 @@ type Schema {
 type SchemaVariant {
   urn: String
   name: String
-  attributes: [SchemaAttribute]
+  attributeTypes: [SchemaAttribute]
 }
 
 type SchemaAttribute {
   urn: String
   fieldName: String
+  mandatory: Boolean
+  multivaluated: Boolean
 }

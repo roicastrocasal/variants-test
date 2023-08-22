@@ -5,6 +5,8 @@ type ClothesAttribute {
   firstComercialAttribute: AttributeInt
   secondComercialAttribute: AttributeInt
   productPresentation: AttributeInt
+  sizeType: AttributeInt
+  tariffGroup: AttributeInt
 }
 
 type AttributeInt {
@@ -19,18 +21,31 @@ type AttributeString {
   value: String
 }
 
+type AttributeBool {
+  urn: String
+  label: String
+  value: Boolean
+}
+
 type ClothesVariant implements Variant {
   urn: String
+  supplier: String
+  salesPeriod: String
   model: AttributeInt
   quality: AttributeInt
   color: AttributeInt
   size: AttributeInt
-  drType: [AttributeInt]
-}
+  drType: AttributeInt
+  drParent: AttributeBool
+  collection: AttributeInt
+}  
 
 type ClothesPlainVariant {
   urn: String
+  salesPeriod: String
+  supplier: String
   attrs: ClothesPlainVariantAttribute
+  
 }
 
 type ClothesPlainVariantAttribute {
@@ -38,12 +53,17 @@ type ClothesPlainVariantAttribute {
   quality: AttributeInt
   color: AttributeInt
   size: AttributeInt
-  drType: [AttributeInt]
+  drParent: AttributeBool
+  drType: AttributeInt
   family: AttributeInt
   subfamily: AttributeInt
   firstComercialAttribute: AttributeInt
   secondComercialAttribute: AttributeInt
   productPresentation: AttributeInt
+  sizeType: AttributeInt
+  tariffGroup: AttributeInt
+  collection: AttributeInt
+
 }
 
 # Union definitions

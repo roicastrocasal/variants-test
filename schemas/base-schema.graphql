@@ -6,12 +6,25 @@ type Product {
   categories: [String]
   attributes: ProductAttribute
   variants: [ProductVariant]
+  metadata: Metadata
 }
+
 
 type Query {
   product(id: ID!): Product
   schema(urn: ID!): Schema
   plainProduct(urn: ID!): [ProductPlainVariant]
+}
+
+type Metadata {
+    created: MetadataInfo
+    updated: MetadataInfo
+    deleted: MetadataInfo
+}
+
+type MetadataInfo {
+  date: String
+  user: String
 }
 
 interface Variant {

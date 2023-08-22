@@ -27,7 +27,17 @@
       },
       {
         "urn": "urn:zara:attribute-values:<drtype-id>",
-        "multivaluated": true,
+        "multivaluated": false,
+        "mandatory": false
+      },
+      {
+        "urn": "urn:zara:attribute-values:<collection-id>",
+        "multivaluated": false,
+        "mandatory": false
+      },
+      {
+        "urn": "urn:zara:attribute-values:<dr-parent-bool-id>",
+        "multivaluated": false,
         "mandatory": false
       }
     ]

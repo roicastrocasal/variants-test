@@ -161,13 +161,13 @@
       {
         "urn": "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-pantalon-value-id>",
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
-        "label": "W.Pantalón",
+        "label": "Pantalon Algodón",
         "value": 1000100
       },
       {
         "urn": "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-vestido-value-id>",
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
-        "label": "L.Vestido",
+        "label": "Pantalon pana",
         "value": 1500000
       }
     ]
@@ -184,13 +184,13 @@
       {
         "urn": "urn:zara:attribute-values:<secondattribute-id>:values:<secondattribute-pantalon-value-id>",
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
-        "label": "W.Pantalón",
-        "value": 1000100
+        "label": "Liso",
+        "value": 100007
       },
       {
         "urn": "urn:zara:attribute-values:<secondattribute-id>:values:<secondattribute-vestido-value-id>",
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
-        "label": "L.Vestido",
+        "label": "Nylon",
         "value": 150
       }
     ]
@@ -207,20 +207,14 @@
       {
         "urn": "urn:zara:attribute-values:<drtype-id>:values:<drtype-commercial-value-id>",
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
-        "label": "Commercial",
+        "label": "Mismo articulo",
         "value": 1
       },
       {
         "urn": "urn:zara:attribute-values:<drtype-id>:values:<drtype-distribucion-value-id>",
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
-        "label": "Distribución",
+        "label": "Cambio de calidad",
         "value": 2
-      },
-      {
-        "urn": "urn:zara:attribute-values:<drtype-id>:values:<drtype-continuidad-value-id>",
-        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
-        "label": "Continuidad",
-        "value": 3
       }
     ]
   },
@@ -244,6 +238,110 @@
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
         "label": "Paqueteria",
         "value": 2
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<sizetype-id>",
+    "name": "Sistema de tallajes",
+    "fieldName": "sizeType",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-letters-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Tallas por letras",
+        "value": 1
+      },
+      {
+        "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-doubleletters-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Tallas dobles por letras",
+        "value": 2
+      },
+      {
+        "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-bra-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Sujetadores",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<tariffgroup-id>",
+    "name": "Grupo arancelario",
+    "fieldName": "tariffGroup",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<tariffgroup-id>:values:<tariffgroup-clothes-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Tejido",
+        "value": 1
+      },
+      {
+        "urn": "urn:zara:attribute-values:<tariffgroup-id>:values:<tariffgroup-knitwear-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Punto",
+        "value": 2
+      },
+      {
+        "urn": "urn:zara:attribute-values:<tariffgroup-id>:values:<tariffgroup-diverso-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Diversos",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<collection-id>",
+    "name": "Collección",
+    "fieldName": "collection",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<collection-id>:values:<collection-redpassion-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Red passion",
+        "value": 100
+      },
+      {
+        "urn": "urn:zara:attribute-values:<collection-id>:values:<collection-capdraping-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Cápsule draping",
+        "value": 200
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<dr-parent-bool-id>",
+    "name": "Padre doble referencia",
+    "fieldName": "drParent",
+    "type": "VALUES",
+    "dataType": "Boolean",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<dr-parent-bool-id>:values:<dr-parent-bool-true-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Si",
+        "value": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<dr-parent-bool-id>:values:<dr-parent-bool-false-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "No",
+        "value": false
       }
     ]
   }

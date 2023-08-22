@@ -28,6 +28,16 @@
         "urn": "urn:zara:attribute-values:<productpresentation-id>",
         "multivaluated": false,
         "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<tariffgroup-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<sizetype-id>",
+        "multivaluated": false,
+        "mandatory": true
       }
     ],
     "variants": ["urn:zara:clothes:variant-type:model-quality-color-size"]

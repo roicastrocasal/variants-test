@@ -7,9 +7,16 @@ module.exports.productSchemaResolver = (parent,args,context,info) => {
 }
 
 module.exports.productSchemaAttributesResolver = (parent,args,context,info) => {
-    return attributeValues.filter(attr => parent.attributes
-        .map(pAttr => pAttr.urn)
-        .includes(attr.urn))
+    return parent.attributes.map(attr => {
+        const attrValue = attributeValues.find(attrVal => attrVal.urn === attr.urn);
+        return {
+            name: attrValue.name,
+            fieldName: attrValue.fieldName,
+            ...attr
+        }
+
+    })
+    
 }
 
 module.exports.productSchemaVariants =  (parent,args,context,info) => {
@@ -18,9 +25,15 @@ module.exports.productSchemaVariants =  (parent,args,context,info) => {
 }
 
 module.exports.productSchemaVariantsAttributes =  (parent,args,context,info) => {
-    return attributeValues.filter(attr => parent.attributeTypes
-        .map(pAttrType => pAttrType.urn)
-        .includes(attr.urn))
+    return parent.attributeTypes.map(attr => {
+        const attrValue = attributeValues.find(attrVal => attrVal.urn === attr.urn);
+        return {
+            name: attrValue.name,
+            fieldName: attrValue.fieldName,
+            ...attr
+        }
+
+    })
 
 }
 

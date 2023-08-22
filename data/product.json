@@ -1,7 +1,7 @@
 [
   {
     "uuid": "2c9bead4-af64-4c0b-baba-15985d8905c3",
-    "urn": "urn:zara:clothes:product:pantalon-corto",
+    "urn": "urn:zara:clothes:product:<pantalon-corto-id>",
     "name": "PANTALON CORTO",
     "productType": "urn:zara:clothes",
     "categories": [
@@ -10,6 +10,18 @@
       "urn:zara:clothes:comprador:woman"
     ],
     "schema": "urn:zara:models:simple-clothes",
+    "metadata" : {
+      "created" : {
+        "date" : "2023/01/01T22:00:00.000",
+        "user": "roicc"
+      },
+      "updated" : {
+        "date" : "2023/01/01T22:00:00.000",
+        "user": "roicc"
+      },
+      "deleted": null
+
+    },
     "attrs": [
       {
         "attributeValue": "urn:zara:attribute-values:<family-id>",
@@ -35,6 +47,16 @@
         "attributeValue": "urn:zara:attribute-values:<productpresentation-id>",
         "multivaluated": false,
         "value": "urn:zara:attribute-values:<productpresentation-id>:values:<productpresentation-confeccion-value-id>"
+      },
+      {
+        "attributeValue": "urn:zara:attribute-values:<sizetype-id>",
+        "multivaluated": false,
+        "value": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-letters-value-id>"
+      },
+      {
+        "attributeValue": "urn:zara:attribute-values:<tariffgroup-id>",
+        "multivaluated": false,
+        "value": "urn:zara:attribute-values:<tariffgroup-id>:values:<tariffgroup-clothes-value-id>"
       }
     ],
     "variants": [
@@ -42,6 +64,8 @@
         "id": 0,
         "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-1-id>",
         "type": "zara:clothes:variant-type:model-quality-color-size",
+        "salesPeriod" : "urn:zara:campaigns:s23",
+        "supplier" : "urn:zara:suppliers:<supplier-1-id>",
         "variantValues": [
           {
             "attributeValue": "urn:zara:attribute-values:<model-id>",
@@ -65,14 +89,155 @@
           },
           {
             "attributeValue": "urn:zara:attribute-values:<drtype-id>",
-            "multivaluated": true,
-            "value": [
-              "urn:zara:attribute-values:<drtype-id>:values:<drtype-distribucion-value-id>",
-              "urn:zara:attribute-values:<drtype-id>:values:<drtype-commercial-value-id>"
-            ]
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<drtype-id>:values:<drtype-commercial-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<collection-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<collection-id>:values:<collection-redpassion-value-id>"
+          },
+          {
+            "attributeValue":"urn:zara:attribute-values:<dr-parent-bool-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<dr-parent-bool-id>:values:<dr-parent-bool-true-value-id>"
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-2-id>",
+        "type": "zara:clothes:variant-type:model-quality-color-size",
+        "salesPeriod" : "urn:zara:campaigns:s23",
+        "supplier" : "urn:zara:suppliers:<supplier-1-id>",
+        "variantValues": [
+          {
+            "attributeValue": "urn:zara:attribute-values:<model-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<model-id>:values:<model-6917-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<quality-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<quality-id>:values:<quality-47-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<color-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<color-id>:values:<color-900-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<size-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<size-id>:values:<size-L-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<drtype-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<drtype-id>:values:<drtype-commercial-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<collection-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<collection-id>:values:<collection-redpassion-value-id>"
+          },
+          {
+            "attributeValue":"urn:zara:attribute-values:<dr-parent-bool-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<dr-parent-bool-id>:values:<dr-parent-bool-true-value-id>"
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-3-id>",
+        "type": "zara:clothes:variant-type:model-quality-color-size",
+        "salesPeriod" : "urn:zara:campaigns:s23",
+        "supplier" : "urn:zara:suppliers:<supplier-2-id>",
+        "variantValues": [
+          {
+            "attributeValue": "urn:zara:attribute-values:<model-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<model-id>:values:<model-6934-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<quality-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<quality-id>:values:<quality-410-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<color-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<color-id>:values:<color-900-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<size-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<size-id>:values:<size-M-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<drtype-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<drtype-id>:values:<drtype-commercial-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<collection-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<collection-id>:values:<collection-redpassion-value-id>"
+          },
+          {
+            "attributeValue":"urn:zara:attribute-values:<dr-parent-bool-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<dr-parent-bool-id>:values:<dr-parent-bool-false-value-id>"
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-4-id>",
+        "type": "zara:clothes:variant-type:model-quality-color-size",
+        "salesPeriod" : "urn:zara:campaigns:s23",
+        "supplier" : "urn:zara:suppliers:<supplier-2-id>",
+        "variantValues": [
+          {
+            "attributeValue": "urn:zara:attribute-values:<model-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<model-id>:values:<model-6934-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<quality-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<quality-id>:values:<quality-410-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<color-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<color-id>:values:<color-900-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<size-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<size-id>:values:<size-L-value-id>"
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<drtype-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<drtype-id>:values:<drtype-commercial-value-id>"
+      
+          },
+          {
+            "attributeValue": "urn:zara:attribute-values:<collection-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<collection-id>:values:<collection-capdraping-value-id>"
+          },
+          {
+            "attributeValue":"urn:zara:attribute-values:<dr-parent-bool-id>",
+            "multivaluated": false,
+            "value": "urn:zara:attribute-values:<dr-parent-bool-id>:values:<dr-parent-bool-false-value-id>"
           }
         ]
       }
     ]
+    
   }
 ]

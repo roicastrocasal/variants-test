@@ -7,7 +7,8 @@ const models = require('./data/models.json')
 const configModelTypes = require('./config/modelTypes-generated.json')
 const {
     productAttributesResolver,
-    productVariantsResolver
+    productVariantsResolver,
+    productPlainVariantsResolver
 } = require('./resolvers/ProductResolvers')
 const {
     productSchemaResolver,
@@ -24,21 +25,7 @@ const resolvers = {
     Query: {
         product: (_, args) => products.find(p => p.urn === args.id),
         schema: (_, args) => models.find(m => m.urn === args.urn),
-        plainProduct: (_, args) => {
-            return products.filter(p => p.urn === args.urn)
-            .flatMap(p => { 
-                
-                return p.variants.map(variant => { 
-                    return {
-                        __type: p.productType,
-                        urn: variant.urn,
-                        ...variant.variantValues,
-                        ...p.attrs
-                    }
-                })
-
-            })
-        } 
+        plainProduct: productPlainVariantsResolver
     },
     Product : {
         attributes : productAttributesResolver,
@@ -71,7 +58,7 @@ const resolvers = {
         variants: productSchemaVariants
     },
     SchemaVariant: {
-        attributes : productSchemaVariantsAttributes
+        attributeTypes : productSchemaVariantsAttributes
     }
 };
 
