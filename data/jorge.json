@@ -1,0 +1,231 @@
+[
+    {
+        "uuid": "2c9bead4-af64-4c0b-baba-15985d8905c3",
+        "urn": "urn:zara:product:lining:forro_de_cuero",
+        "name": "forro de cuero",
+        "productType": "urn:zara:models:lining",
+        "categories": [
+            "urn:zara",
+            "urn:zara:product:lining",
+            "urn:zara:lining:product:comprador:woman"
+        ],
+        "attributes": [
+            {
+                "schema": "urn:zara:models:lining",
+                "attrs": [
+                    {
+                        "attributeValue": "urn:zara:attribute-values:print",
+                        "value": "urn:zara:attribute-values:print:true"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:width",
+                        "value": "urn:zara:attribute-values:width:2000"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:useful_width",
+                        "value": "urn:zara:attribute-values:useful_width:2000"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:color_id",
+                        "value": "urn:zara:attribute-values:uuid..."
+                    }
+                ]
+            },
+            {
+                "schema": "urn:zara:models:packaging",
+                "attrs": [
+                    {
+                        "attributeValue": "urn:zara:attribute-values:width",
+                        "value": "urn:zara:attribute-values:width:2000"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:height",
+                        "value": "urn:zara:attribute-values:height:2000"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:depth",
+                        "value": "urn:zara:attribute-values:depth:2000"
+                    }
+                ]
+            },
+            {
+                "schema": "urn:zara:models:rm-composition",
+                "attrs": [
+                    {
+                        "attributeValue": "urn:zara:attribute-values:type",
+                        "value": "urn:zara:attribute-values:type:basic"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:name",
+                        "value": "urn:zara:attribute-values:name:leather"
+                    }
+                ]
+            }
+        ],
+        "metainfo": {
+            "type": "urn:zara:models:metainfo-type:basic-product-info",
+            "data": [
+                {
+                    "type": "urn:zara:data-types:image-uri",
+                    "params": [
+                        {
+                            "type": "urn:zara:data-types:image-uri:link",
+                            "value": "http://amanda-resources/image-color900"
+                        }
+                    ]
+                }
+            ]
+        },
+        "variants": [
+            {
+                "id": 0,
+                "urn": "urn:zara:product:lining:variant:0",
+                "type": "zara:clothes:variant-type:color-size",
+                "sku": "55aaa434-9910-421c-b7e7-a015fda6ed04",
+                "metainfo": {
+                    "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
+                    "data": [
+                        {
+                            "type": "urn:zara:data-types:image-uri",
+                            "params": [
+                                {
+                                    "type": "urn:zara:data-types:image-uri:link",
+                                    "value": "http://amanda-resources/image-color900"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "variantValues": [
+                    {
+                        "attributeValue": "urn:zara:attribute-values:color",
+                        "value": "urn:zara:attribute-values:color:900"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:size",
+                        "value": "urn:zara:attribute-values:size:l"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "urn": "urn:zara:clothes:product:pantalon-corto:variant:1",
+                "type": "zara:clothes:variant-type:color-size",
+                "sku": "55aaa434-9910-421c-b7e7-a015fda6ed04",
+                "metainfo": {
+                    "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
+                    "data": [
+                        {
+                            "type": "urn:zara:data-types:image-uri",
+                            "params": [
+                                {
+                                    "type": "urn:zara:data-types:image-uri:link",
+                                    "value": "http://amanda-resources/image-color900"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "variantValues": [
+                    {
+                        "attributeValue": "urn:zara:attribute-values:color",
+                        "value": "urn:zara:attribute-values:color:900"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:size",
+                        "value": "urn:zara:attribute-values:size:xl"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "urn": "urn:zara:clothes:product:pantalon-corto:variant:2",
+                "type": "zara:clothes:variant-type:color-size",
+                "sku": "45e66e3b-2cc3-45fb-92d0-e3fc27300cce",
+                "metainfo": {
+                    "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
+                    "data": [
+                        {
+                            "type": "urn:zara:data-types:image-uri",
+                            "params": [
+                                {
+                                    "type": "urn:zara:data-types:image-uri:link",
+                                    "value": "http://amanda-resources/image-color907"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "variantValues": [
+                    {
+                        "attributeValue": "urn:zara:attribute-values:color",
+                        "value": "urn:zara:attribute-values:color:907"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:size",
+                        "value": "urn:zara:attribute-values:size:xl"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "urn": "urn:zara:clothes:product:pantalon-corto:variant:3",
+                "type": "zara:clothes:variant-type:color-size",
+                "sku": "7e63f3b7-38c3-4232-9dd0-91021dfdc245",
+                "metainfo": {
+                    "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
+                    "data": [
+                        {
+                            "type": "urn:zara:data-types:image-uri",
+                            "params": [
+                                {
+                                    "type": "urn:zara:data-types:image-uri:link",
+                                    "value": "http://amanda-resources/image-color907"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "variantValues": [
+                    {
+                        "attributeValue": "urn:zara:attribute-values:color",
+                        "value": "urn:zara:attribute-values:color:907"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:size",
+                        "value": "urn:zara:attribute-values:size:m"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "urn": "urn:zara:clothes:product:pantalon-corto:variant:4",
+                "type": "zara:clothes:variant-type:stamp-size",
+                "metainfo": {
+                    "type": "urn:zara:clothes:metainfo-type:clothes-variants-info",
+                    "data": [
+                        {
+                            "type": "urn:zara:data-types:image-uri",
+                            "params": [
+                                {
+                                    "type": "urn:zara:data-types:image-uri:link",
+                                    "value": "http://amanda-resources/image-stamp-flowers"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "variantValues": [
+                    {
+                        "attributeValue": "urn:zara:attribute-values:color",
+                        "value": "urn:zara:attribute-values:color:907"
+                    },
+                    {
+                        "attributeValue": "urn:zara:attribute-values:stamp",
+                        "value": "urn:zara:attribute-values:stamp:flowers"
+                    }
+                ]
+            }
+        ]
+    }
+]

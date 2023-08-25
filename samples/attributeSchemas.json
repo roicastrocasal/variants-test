@@ -1,0 +1,134 @@
+[
+    {
+        
+        "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+        "urn": "urn:zara:clothes:attribute-schema:<family-subfamily-id>",
+        "name": "PRODUCT FAMILIES",
+        "categories": ["urn:zara:clothes"],
+        "mask" : null,
+        "attributes" : [
+            {
+                "urn": "urn:zara:attribute-values:<family-id>",
+                "multivaluated": false,
+                "mandatory": true,
+                "relations" : [
+                  {
+                    "urn" : "urn:zara:attribute-values:<family-id>:<family-pantalon-id>",
+                    "attributes" : [
+                      {
+                        "urn" : "urn:zara:attribute-values:<subfamily-id>",
+                        "values" : [
+                          "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-wpantalon-value-id>",
+                          "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-cpantalon-value-id>"
+                        ]
+                      },
+                      {
+                        "urn" : "urn:zara:attribute-values:<firstcommenrcial-id>",
+                        "values" : [
+                          "urn:zara:attribute-values:<subfamily-id>:values:<firstattribute-pantalon-algodon-value-id>"
+                        ]
+                      }
+                    ]
+
+                }
+              ]
+            },
+            {
+                "urn": "urn:zara:attribute-values:<subfamily-id>",
+                "multivaluated": false,
+                "mandatory": true,
+                "relations" : [
+                  {
+                    "urn" : "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-wpantalon-value-id>",
+                    "attributes" : [
+                      {
+                        "urn" : "urn:zara:attribute-values:<firstcommenrcial-id>",
+                        "values" : [
+                          "urn:zara:attribute-values:<subfamily-id>:values:<firstattribute-pantalon-temporada-value-id>"
+    
+                        ]
+                      }
+                    ]
+
+                }
+              ]
+            },
+            {
+                "urn": "urn:zara:attribute-values:<firstcommenrcial-id>",
+                "multivaluated": false,
+                "mandatory": true
+            }
+        ]
+        
+    },   
+    {
+        
+        "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+        "urn": "urn:zara:clothes:attribute-schema:<model-quality-id>",
+        "name": "MODELO-CALIDAD",
+        "categories": ["urn:zara:clothes"],
+        "mask" : "{model} / {quality}",
+        "attributes" : [
+            {
+                "urn": "urn:zara:attribute-values:<model-id>",
+                "multivaluated": false,
+                "mandatory": true
+              },
+              {
+                "urn": "urn:zara:attribute-values:<quality-id>",
+                "multivaluated": false,
+                "mandatory": true
+              }
+        ]
+            
+    },
+    {
+        
+        "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+        "urn": "urn:zara:clothes:attribute-schema:<dimensions-mm-id>",
+        "name": "DIMENSIONS MM",
+        "categories": ["urn:zara:clothes"],
+        "mask" : "{long} x {width} x {height} mm",
+        "attributes" : [
+            {
+                "urn": "urn:zara:attribute-values:<long-id>",
+                "multivaluated": false,
+                "mandatory": true
+              },
+              {
+                "urn": "urn:zara:attribute-values:<width-id>",
+                "multivaluated": false,
+                "mandatory": true
+              },
+              {
+                "urn": "urn:zara:attribute-values:<height-id>",
+                "multivaluated": false,
+                "mandatory": true
+              }
+        ]
+            
+    },
+    {
+      "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+      "urn": "urn:zara:clothes:attribute-schema:<color-size-collection-mm-id>",
+      "name": "COLOR TALLA COLECCION",
+      "categories": ["urn:zara:clothes"],
+      "attributeTypes": [
+        {
+          "urn": "urn:zara:attribute-values:<color-id>",
+          "multivaluated": false,
+          "mandatory": true
+        },
+        {
+          "urn": "urn:zara:attribute-values:<size-id>",
+          "multivaluated": false,
+          "mandatory": true
+        },
+        {
+          "urn": "urn:zara:attribute-values:<collection-id>",
+          "multivaluated": false,
+          "mandatory": false
+        }
+      ]
+    }
+  ]

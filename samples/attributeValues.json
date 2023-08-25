@@ -1,0 +1,308 @@
+[
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<model-id>",
+    "name": "Modelo",
+    "fieldName": "model",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<model-id>:values:<model-6917-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "6917",
+        "value": 6917
+      },
+      {
+        "urn": "urn:zara:attribute-values:<model-id>:values:<model-6934-value-id>",
+        "uuid": "30b341df-5213-41b5-b740-101127f837bf",
+        "label": "6394",
+        "value": 6934
+      },
+      {
+        "urn": "urn:zara:attribute-values:<model-id>:values:<model-6644-value-id>",
+        "uuid": "30b341df-5213-41b5-b740-101127f837bf",
+        "label": "6644",
+        "value": 5644
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<quality-id>",
+    "name": "Calidad",
+    "fieldName": "quality",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<quality-id>:values:<quality-47-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "47",
+        "value": 47
+      },
+      {
+        "urn": "urn:zara:attribute-values:<quality-id>:values:<quality-410-value-id>",
+        "uuid": "30b341df-5213-41b5-b740-101127f837bf",
+        "label": "410",
+        "value": 410
+      },
+      {
+        "urn": "urn:zara:attribute-values:<quality-id>:<quality-453-value-id>",
+        "uuid": "30b341df-5213-41b5-b740-101127f837bf",
+        "label": "453",
+        "value": 453
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<color-id>",
+    "name": "Color",
+    "fieldName": "color",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<color-id>:values:<color-900-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "900",
+        "value": 900
+      },
+      {
+        "urn": "urn:zara:attribute-values:<color-id>:values:<color-907-value-id>",
+        "uuid": "30b341df-5213-41b5-b740-101127f837bf",
+        "label": "907",
+        "value": 907
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<size-id>",
+    "name": "Sizes",
+    "fieldName": "size",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<size-id>:values:<size-L-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "L",
+        "value": 1
+      },
+      {
+        "urn": "urn:zara:attribute-values:<size-id>:values:<size-M-value-id>",
+        "uuid": "30b341df-5213-41b5-b740-101127f837bf",
+        "label": "M",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<family-id>",
+    "name": "Familia",
+    "fieldName": "family",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<family-id>:values:<family-pantalon-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Pantalón",
+        "value": 1
+      },
+      {
+        "urn": "urn:zara:attribute-values:<family-id>:values:<family-vestido-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Vestido",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<subfamily-id>",
+    "name": "Subfamilia",
+    "fieldName": "subfamily",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-wpantalon-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "W.Pantalón",
+        "value": 500
+      },
+      {
+        "urn": "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-cpantalon-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "C.Pantalón",
+        "value": 500
+      },
+      {
+        "urn": "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-vestido-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "L.Vestido",
+        "value": 150
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<firstattribute-id>",
+    "name": "Primer atributo Comercial",
+    "fieldName": "firstComercialAttribute",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-pantalon-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Pantalon Algodón",
+        "value": 1000100
+      },
+      {
+        "urn": "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-vestido-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Pantalon pana",
+        "value": 1500000
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<secondattribute-id>",
+    "name": "Segundo atributo Comercial",
+    "fieldName": "secondComercialAttribute",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<secondattribute-id>:values:<secondattribute-pantalon-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Liso",
+        "value": 100007
+      },
+      {
+        "urn": "urn:zara:attribute-values:<secondattribute-id>:values:<secondattribute-vestido-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Nylon",
+        "value": 150
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<productpresentation-id>",
+    "name": "Tipo de presentación de producto",
+    "fieldName": "productPresentation",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<productpresentation-id>:values:<productpresentation-confeccion-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Confección",
+        "value": 1
+      },
+      {
+        "urn": "urn:zara:attribute-values:<productpresentation-id>:values:<productpresentation-paqueteria-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Paqueteria",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<sizetype-id>",
+    "name": "Sistema de tallajes",
+    "fieldName": "sizeType",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-letters-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Tallas por letras",
+        "value": 1
+      },
+      {
+        "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-doubleletters-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Tallas dobles por letras",
+        "value": 2
+      },
+      {
+        "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-bra-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Sujetadores",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<tariffgroup-id>",
+    "name": "Grupo arancelario",
+    "fieldName": "tariffGroup",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<tariffgroup-id>:values:<tariffgroup-clothes-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Tejido",
+        "value": 1
+      },
+      {
+        "urn": "urn:zara:attribute-values:<tariffgroup-id>:values:<tariffgroup-knitwear-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Punto",
+        "value": 2
+      },
+      {
+        "urn": "urn:zara:attribute-values:<tariffgroup-id>:values:<tariffgroup-diverso-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Diversos",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "uuid": "725a77de-8449-4245-87e1-06f97048f636",
+    "urn": "urn:zara:attribute-values:<collection-id>",
+    "name": "Collección",
+    "fieldName": "collection",
+    "type": "VALUES",
+    "dataType": "Int",
+    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "values": [
+      {
+        "urn": "urn:zara:attribute-values:<collection-id>:values:<collection-redpassion-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Red passion",
+        "value": 100
+      },
+      {
+        "urn": "urn:zara:attribute-values:<collection-id>:values:<collection-capdraping-value-id>",
+        "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
+        "label": "Cápsule draping",
+        "value": 200
+      }
+    ]
+  }
+]

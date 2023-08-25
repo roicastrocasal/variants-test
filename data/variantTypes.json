@@ -41,5 +41,48 @@
         "mandatory": false
       }
     ]
+  },
+  {
+    "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+    "urn": "urn:zara:clothes:variant-type:commercial-attributes",
+    "name": "Atributos comerciales",
+    "categories": ["urn:zara:clothes"],
+    "attributeTypes": [
+      {
+        "urn": "urn:zara:attribute-values:<family-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<subfamily-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<color-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<size-id>",
+        "multivaluated": false,
+        "mandatory": true
+      },
+      {
+        "urn": "urn:zara:attribute-values:<drtype-id>",
+        "multivaluated": false,
+        "mandatory": false
+      },
+      {
+        "urn": "urn:zara:attribute-values:<collection-id>",
+        "multivaluated": false,
+        "mandatory": false
+      },
+      {
+        "urn": "urn:zara:attribute-values:<dr-parent-bool-id>",
+        "multivaluated": false,
+        "mandatory": false
+      }
+    ]
   }
 ]

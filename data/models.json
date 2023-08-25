@@ -35,7 +35,7 @@
         "mandatory": true
       },
       {
-        "urn": "urn:zara:attribute-values:<sizetype-id>",
+        "urn": "urn:zara:attribute-values:<productpresentation-id>",
         "multivaluated": false,
         "mandatory": true
       }
