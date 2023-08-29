@@ -1,16 +1,15 @@
 [
   {
-    "urn": "urn:zara:schema:simple-clothes",
+    "urn": "urn:zara:models:simple-clothes",
     "name": "SimpleClothes",
     "productType": "urn:zara:clothes",
     "attributeSchemas": [
-      "urn:zara:clothes:attribute-model:<model-quality-id>",
-      "urn:zara:clothes:attribute-model:<commercial-attributes-id>",
+      "urn:zara:clothes:attribute-schema:<model-quality-id>",
       "urn:zara:clothes:attribute-schema:<generic-product-info>"
       
 
     ],
-    "variantSchema": "urn:zara:clothes:variant-type:model-color"
+    "variantSchema": "urn:zara:clothes:variant-type:schema-color-sizes"
   }
 ]
 // Toda la colección de atributos es unique contando atributos de producto mas variantes.

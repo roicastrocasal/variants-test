@@ -1,0 +1,232 @@
+[
+    {
+      "uuid": "2c9bead4-af64-4c0b-baba-15985d8905c3",
+      "urn": "urn:zara:clothes:product:<pantalon-corto-id>",
+      "name": "PANTALON CORTO",
+      "productType": "urn:zara:clothes",
+      "categories": [
+        "urn:zara",
+        "urn:zara:clothes",
+        "urn:zara:clothes:comprador:woman"
+      ],
+      "schema": "urn:zara:models:simple-clothes",
+      "metadata" : {
+        "created" : {
+          "date" : "2023/01/01T22:00:00.000",
+          "user": "roicc"
+        },
+        "updated" : {
+          "date" : "2023/01/01T22:00:00.000",
+          "user": "roicc"
+        },
+        "deleted": null
+  
+      },
+      "attrs": [
+        {
+            "schema": "urn:zara:clothes:attribute-schema:<model-quality-id>",
+            "name": "MODELO-CALIDAD",
+            "attributes" : [
+                {
+                    "type" : "urn:zara:attribute-values:<model-id>",
+                    "urn": "urn:zara:attribute-values:<model-id>:values:<model-6917-value-id>",
+                    "label" : "6917",
+                    "value" : 6917
+                },
+                {
+                    "type": "urn:zara:attribute-values:<quality-id>",
+                    "urn": "zara:attribute-values:<quality-id>:values:<quality-47-value-id>",
+                    "label" : "47",
+                    "value" : 47
+                }
+            ]
+            
+        },
+        {
+            "schema":  "urn:zara:clothes:attribute-schema:<commercial-attributes-id>",
+            "name": "Commercial Attributes",
+            "attributes" : [
+                {
+                    "type" : "urn:zara:attribute-values:<family-id>",
+                    "urn": "urn:zara:attribute-values:<family-id>:values:<family-pantalon-value-id>",
+                    "fieldName" : "family",
+                    "label" : "Pantalón",
+                    "value" : 1
+                },
+                {
+                    "type":  "urn:zara:attribute-values:<subfamily-id>",
+                    "urn":  "urn:zara:attribute-values:<subfamily-id>:values:<subfamily-wpantalon-value-id>",
+                    "fieldName" : "subfamily",
+                    "label" : "W.Pantalón",
+                    "value" : 200
+                },
+                {
+                    "type":  "urn:zara:attribute-values:<firstattribute-id>",
+                    "urn":  "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-cotton-pantalon-value-id>",
+                    "fieldName" : "firstCommercialAttribute",
+                    "label" : "Pantalón algodón",
+                    "value" : 1000100
+                },
+                {
+                    "type":  "urn:zara:attribute-values:<subfamily-id>",
+                    "urn":  "urn:zara:attribute-values:<secondattribute-id>:values:<secondattribute-liso-value-id>",
+                    "fieldName" : "secondCommercialAttribute",
+                    "label" : "Liso",
+                    "value" : 100007
+                }
+            ]
+            
+        },
+        {
+            "schema":  "urn:zara:clothes:attribute-schema:<generic-product-info>",
+            "name": "Generic productInfo",
+            "attributes" : [
+                {
+                    "type" : "urn:zara:attribute-values:<tariffgroup-id>",
+                    "urn": "urn:zara:attribute-values:<tariffgroup-id>:values:<tariffgroup-clothes-value-id>",
+                    "fieldName" : "tariffGroup",
+                    "label" : "Ropa",
+                    "value" : 1
+                },
+                {
+                    "type":  "urn:zara:attribute-values:<productpresentation-id>",
+                    "urn":  "urn:zara:attribute-values:<productpresentation-id>:values:<productpresentation-confeccion-value-id>",
+                    "fieldName" : "productPresentation",
+                    "label" : "Confección",
+                    "value" : 1
+                }
+            ]
+            
+        }
+       
+
+      ],
+      "variants" : [
+
+        {
+            "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-1-id>",
+            "schema":  "urn:zara:clothes:variant-type:model-color",
+            "name": "Color talla",
+            "attributes" : [ 
+                {
+                    "type" : "urn:zara:attribute-values:<color-id>",
+                    "urn": "urn:zara:attribute-values:<color-id>:values:<color-900-value-id>",
+                    "fieldName" : "color",
+                    "label" : "900",
+                    "value" : 900
+                },
+                {
+                    "type" : "urn:zara:attribute-values:<sizetype-id>",
+                    "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-letters-value-id>",
+                    "fieldName" : "sizeType",
+                    "label" : "Talla por letras",
+                    "value" : 1
+                },
+                {
+                    "type" : "urn:zara:attribute-values:<size-id>",
+                    "urn": "urn:zara:attribute-values:<size-id>:values:<size-M-value-id>",
+                    "fieldName" : "size",
+                    "label" : "M",
+                    "value" : 2
+                }
+            ]
+        },
+        {
+            "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-2-id>",
+            "schema":  "urn:zara:clothes:variant-type:model-color",
+            "name": "Color talla",
+            "attributes" : [ 
+                {
+                    "type" : "urn:zara:attribute-values:<color-id>",
+                    "urn": "urn:zara:attribute-values:<color-id>:values:<color-907-value-id>",
+                    "fieldName" : "color",
+                    "label" : "907",
+                    "value" : 907
+                },
+                {
+                    "type" : "urn:zara:attribute-values:<sizetype-id>",
+                    "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-letters-value-id>",
+                    "fieldName" : "sizeType",
+                    "label" : "Talla por letras",
+                    "value" : 1
+                },
+                {
+                    "type" : "urn:zara:attribute-values:<size-id>",
+                    "urn": "urn:zara:attribute-values:<size-id>:values:<size-M-value-id>",
+                    "fieldName" : "size",
+                    "label" : "M",
+                    "value" : 2
+                }
+            ]
+        },
+        {
+            "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-3-id>",
+            "schema":  "urn:zara:clothes:variant-type:model-color",
+            "name": "Color talla",
+            "attributes" : [ 
+                {
+                    "type" : "urn:zara:attribute-values:<color-id>",
+                    "urn": "urn:zara:attribute-values:<color-id>:values:<color-900-value-id>",
+                    "fieldName" : "color",
+                    "label" : "900",
+                    "value" : 900
+                },
+                {
+                    "type" : "urn:zara:attribute-values:<sizetype-id>",
+                    "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-letters-value-id>",
+                    "fieldName" : "sizeType",
+                    "label" : "Talla por letras",
+                    "value" : 1
+                },
+                {
+                    "type" : "urn:zara:attribute-values:<size-id>",
+                    "urn": "urn:zara:attribute-values:<size-id>:values:<size-L-value-id>",
+                    "fieldName" : "size",
+                    "label" : "L",
+                    "value" : 1
+                }
+            ]
+        },
+        {
+            "urn": "urn:zara:clothes:product:<product-1-id>:variant:<variant-4-id>",
+            "schema":  "urn:zara:clothes:variant-type:model-color",
+            "name": "Color talla",
+            "attributes" : [ 
+                {
+                    "type" : "urn:zara:attribute-values:<color-id>",
+                    "urn": "urn:zara:attribute-values:<color-id>:values:<color-907-value-id>",
+                    "fieldName" : "color",
+                    "label" : "907",
+                    "value" : 907
+                },
+                {
+                    "type" : "urn:zara:attribute-values:<sizetype-id>",
+                    "urn": "urn:zara:attribute-values:<sizetype-id>:values:<sizetype-letters-value-id>",
+                    "fieldName" : "sizeType",
+                    "label" : "Talla por letras",
+                    "value" : 1
+                },
+                {
+                    "type" : "urn:zara:attribute-values:<size-id>",
+                    "urn": "urn:zara:attribute-values:<size-id>:values:<size-L-value-id>",
+                    "fieldName" : "size",
+                    "label" : "L",
+                    "value" : 1
+                }
+            ]
+        }
+
+
+
+      ]
+
+      
+      
+
+
+      
+
+
+      
+    }
+]

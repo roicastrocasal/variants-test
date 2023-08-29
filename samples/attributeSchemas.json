@@ -2,10 +2,9 @@
     {
         
         "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-        "urn": "urn:zara:clothes:attribute-schema:<family-subfamily-id>",
-        "name": "PRODUCT FAMILIES",
+        "urn": "urn:zara:clothes:attribute-schema:<commercial-attributes-id>",
+        "name": "Commercial attributes",
         "categories": ["urn:zara:clothes"],
-        "mask" : null,
         "attributes" : [
             {
                 "urn": "urn:zara:attribute-values:<family-id>",
@@ -57,6 +56,11 @@
                 "urn": "urn:zara:attribute-values:<firstcommenrcial-id>",
                 "multivaluated": false,
                 "mandatory": true
+            },
+            {
+                "urn": "urn:zara:attribute-values:<secondcommenrcial-id>",
+                "multivaluated": false,
+                "mandatory": true
             }
         ]
         
@@ -66,8 +70,10 @@
         "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
         "urn": "urn:zara:clothes:attribute-schema:<model-quality-id>",
         "name": "MODELO-CALIDAD",
-        "categories": ["urn:zara:clothes"],
-        "mask" : "{model} / {quality}",
+        "categories": [
+          "urn:zara:clothes"
+        
+        ],
         "attributes" : [
             {
                 "urn": "urn:zara:attribute-values:<model-id>",
@@ -88,7 +94,6 @@
         "urn": "urn:zara:clothes:attribute-schema:<dimensions-mm-id>",
         "name": "DIMENSIONS MM",
         "categories": ["urn:zara:clothes"],
-        "mask" : "{long} x {width} x {height} mm",
         "attributes" : [
             {
                 "urn": "urn:zara:attribute-values:<long-id>",
@@ -110,8 +115,8 @@
     },
     {
       "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
-      "urn": "urn:zara:clothes:attribute-schema:<color-size-collection-mm-id>",
-      "name": "COLOR TALLA COLECCION",
+      "urn": "urn:zara:clothes:attribute-schema:<color-collection-mm-id>",
+      "name": "Color collection variant",
       "categories": ["urn:zara:clothes"],
       "attributeTypes": [
         {
@@ -120,14 +125,63 @@
           "mandatory": true
         },
         {
-          "urn": "urn:zara:attribute-values:<size-id>",
+          "urn": "urn:zara:attribute-values:<collection-id>",
+          "multivaluated": false,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+      "urn": "urn:zara:clothes:attribute-schema:<generic-product-info>",
+      "name": "Generic product info",
+      "categories": ["urn:zara:clothes"],
+      "attributeTypes": [
+        {
+          "urn": "urn:zara:attribute-values:<productpresentation-id>",
           "multivaluated": false,
           "mandatory": true
         },
         {
-          "urn": "urn:zara:attribute-values:<collection-id>",
+          "urn": "urn:zara:attribute-values:<tariffgroup-id>",
+          "multivaluated": false,
+          "mandatory": true
+        },
+        {
+          "urn": "urn:zara:attribute-values:<sizetype-id>",
           "multivaluated": false,
           "mandatory": false
+        }
+      ]
+    } ,
+    {
+      "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+      "urn": "urn:zara:clothes:attribute-schema:<color-id>",
+      "name": "Color  variant",
+      "categories": ["urn:zara:clothes"],
+      "attributeTypes": [
+        {
+          "urn": "urn:zara:attribute-values:<color-id>",
+          "multivaluated": false,
+          "mandatory": true
+        }
+      ]
+    } ,
+    {
+      "uuid": "968161f0-becc-4cb4-9b35-f0cea51fb0ed",
+      "urn": "urn:zara:clothes:attribute-schema:<color-size-id>",
+      "name": "Color talla variant",
+      "categories": ["urn:zara:clothes"],
+      "attributeTypes": [
+        {
+          "urn": "urn:zara:attribute-values:<color-id>",
+          "multivaluated": false,
+          "mandatory": true
+        },
+        {
+          "urn": "urn:zara:attribute-values:<sizes-id>",
+          "multivaluated": false,
+          "mandatory": true
         }
       ]
     }

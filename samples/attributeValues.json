@@ -35,7 +35,7 @@
     "fieldName": "quality",
     "type": "VALUES",
     "dataType": "Int",
-    "categories": ["urn:zara:clothes", "urn:zara:shoes"],
+    "categories": ["urn:zara:clothes", "urn:zara:shoes","urn:zara:fabrics"],
     "values": [
       {
         "urn": "urn:zara:attribute-values:<quality-id>:values:<quality-47-value-id>",
@@ -165,13 +165,13 @@
     "categories": ["urn:zara:clothes", "urn:zara:shoes"],
     "values": [
       {
-        "urn": "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-pantalon-value-id>",
+        "urn": "urn:zara:attribute-values:<firstattribute-id>:values:<cotton-pantalon-value-id>",
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
         "label": "Pantalon Algodón",
         "value": 1000100
       },
       {
-        "urn": "urn:zara:attribute-values:<firstattribute-id>:values:<firstattribute-vestido-value-id>",
+        "urn": "urn:zara:attribute-values:<firstattribute-id>:values:<pana-vestido-value-id>",
         "uuid": "f262e61f-9dc7-4943-af6e-d85a4f084b4d",
         "label": "Pantalon pana",
         "value": 1500000

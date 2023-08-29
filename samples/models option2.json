@@ -1,6 +1,6 @@
 [
   {
-    "urn": "urn:zara:schema:simple-clothes",
+    "urn": "urn:zara:models:simple-clothes",
     "name": "SimpleClothes",
     "productType": "urn:zara:clothes",
     "attributeSchemas": [
@@ -10,7 +10,7 @@
       
 
     ],
-    "variantSchema": "urn:zara:clothes:variant-type:model-color"
+    "variantSchema": "urn:zara:clothes:variant-type:model-color-sizes"
   }
 ]
 // Toda la colección de atributos es unique contando atributos de producto mas variantes.
